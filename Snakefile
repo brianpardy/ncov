@@ -185,7 +185,7 @@ rule ancestral:
             --alignment {input.alignment} \
             --output-node-data {output.node_data} \
             --inference {params.inference} \
-            --keep-ambiguous
+            --infer-ambiguous
         """
 
 rule translate:
