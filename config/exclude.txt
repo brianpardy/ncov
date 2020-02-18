@@ -25,6 +25,7 @@ pangolin/Guangxi/P3B/2017
 pangolin/Guangxi/P4L/2017
 pangolin/Guangxi/P5E/2017
 pangolin/Guangxi/P5L/2017
+pangolin/Guandong/1/2020
 
 # Confusing phylogeography
 #Australia/QLD02/2020
