@@ -5,6 +5,7 @@ build/
 data/ncov.fasta
 data/ncov.fasta-e
 data/sequences.fasta
+data/sequences.fasta.old
 auspice/ncov_*.json
 config/colors.tsv
 
