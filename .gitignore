@@ -7,6 +7,7 @@ data/ncov.fasta-e
 data/sequences.fasta
 data/sequences.fasta.old
 auspice/ncov_*.json
+auspice/sars-like-cov.json
 config/colors.tsv
 
 # Sensitive environment variables
