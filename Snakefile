@@ -84,7 +84,7 @@ rule align:
             --reference-sequence {input.reference} \
             --output {output.alignment} \
             --fill-gaps \
-	    --nthreads 8 \
+	    --nthreads auto \
             --remove-reference
         """
 
@@ -124,6 +124,7 @@ rule tree:
         """
         augur tree \
             --alignment {input.alignment} \
+	    --nthreads auto \
             --output {output.tree}
         """
 
