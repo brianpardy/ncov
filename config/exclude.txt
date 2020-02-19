@@ -14,8 +14,8 @@ Italy/INMI1/2020
 #Italy/INMI1-isl/2020
 
 # Duplicates of France/IDF0372/2020 and France/IDF0515/2020
-France/IDF0372-isl/2020
-France/IDF0515-isl/2020
+#France/IDF0372-isl/2020
+#France/IDF0515-isl/2020
 
 # Lack of precise date is leading to an incorrect time placement (end of Jan)
 HKU-SZ-005b_2020
