@@ -23,6 +23,16 @@
       "type": "categorical"
     },
     {
+      "key": "age",
+      "title": "Age",
+      "type": "continuous"
+    },
+    {
+      "key": "sex",
+      "title": "Sex",
+      "type": "categorical"
+    },
+    {
       "key": "author",
       "title": "Authors",
       "type": "categorical"
@@ -51,7 +61,7 @@
   ],
   "display_defaults": {
     "color_by": "division",
-    "distance_measure": "num_date",    
+    "distance_measure": "num_date",
     "geo_resolution": "division",
     "map_triplicate": true
   },
