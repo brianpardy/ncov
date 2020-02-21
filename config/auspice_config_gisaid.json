@@ -1,4 +1,6 @@
 {
+  "title": "Genomic epidemiology of novel coronavirus (SARS-CoV-2)",
+  "build_url": "https://github.com/nextstrain/ncov",
   "colorings": [
     {
       "key": "location",
