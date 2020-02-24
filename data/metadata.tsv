@@ -1,4 +1,6 @@
 strain	virus	gisaid_epi_isl	genbank_accession	date	region	country	division	location	segment	host	age	sex	originating_lab	submitting_lab	authors	url	title
+Hefei/2/2020	ncov	EPI_ISL_412026	?	2020-02-23	Asia	China	Anhui	Hefei	genome	Human	?	?	 Second Hospital of Anhui Medical University	Second Hospital of Anhui Medical University	Wang et al	https://www.gisaid.org	?
+Shanghai/SH-01/2020	ncov	EPI_ISL_411949	?	2020-01-16	Asia	China	Shanghai	Shanghai	genome	Human	56	Female	?	 Pathogenic microbiology laboratory，Huashan Hospital, Fudan University	Ai et al	https://www.gisaid.org	?
 Australia/NSW01/2020	ncov	EPI_ISL_407893	?	2020-01-24	Oceania	Australia	New South Wales	Sydney	genome	Human	43	Male	Centre for Infectious Diseases and Microbiology Laboratory Services	NSW Health Pathology - Institute of Clinical Pathology and Medical Research; Westmead Hospital; University of Sydney	Eden et al	https://www.gisaid.org	?
 Australia/QLD01/2020	ncov	EPI_ISL_407894	?	2020-01-28	Oceania	Australia	Queensland	Gold Coast	genome	Human	44	Male	Pathology Queensland	Public Health Virology Laboratory	Huang et al	https://www.gisaid.org	?
 Australia/QLD02/2020	ncov	EPI_ISL_407896	?	2020-01-30	Oceania	Australia	Queensland	Gold Coast	genome	Human	42	Female	Pathology Queensland	Public Health Virology Laboratory	Huang et al	https://www.gisaid.org	?
