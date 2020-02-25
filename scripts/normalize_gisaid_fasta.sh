@@ -2,6 +2,7 @@
 set -e 
 GISAID_SARSCOV2_IN=$1
 GISAID_SARSCOV2_OUT=$2
+MIN_LENGTH=$3
 
 if [[ ! -r "$GISAID_SARSCOV2_IN" ]]
 then
@@ -9,7 +10,13 @@ then
 	exit 1
 fi
 
-echo "Normalizing GISAID file $GISAID_SARSCOV2_IN to $GISAID_SARSCOV2_OUT"
+if [[ -z $MIN_LENGTH ]]
+then
+	echo "Using default minimum length of 15000"
+	MIN_LENGTH=15000
+fi
+
+echo "Normalizing GISAID file $GISAID_SARSCOV2_IN to $GISAID_SARSCOV2_OUT (min length $MIN_LENGTH)"
 
 # Remove leading 'BetaCoV' and 'BetaCov' from sequence names
 # Remove embedded spaces in sequence names (Hong Kong sequences)
@@ -20,7 +27,8 @@ cat $GISAID_SARSCOV2_IN |
 	sed 's/^>BetaCoV\//>/gi' |	# remove leading BetaCo[vV]
 	sed 's/ //g' |			# remove embedded spaces
 	sed 's/|.*$//' | 		# remove trailing metadata
-	awk 'BEGIN{RS=">";FS="\n"}!x[$1]++{print ">"$0}' | # remove duplicates
+	awk 'BEGIN{RS=">";FS="\n"}length>10000{print ">"$0}' |	# remove short seqs
+	awk 'BEGIN{RS=">";FS="\n"}!x[$1]++{print ">"$0}' | 	# remove duplicates
 	grep -v '^>*$' > $GISAID_SARSCOV2_OUT
 
 exit 0
