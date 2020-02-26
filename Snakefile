@@ -429,10 +429,12 @@ rule gisaid:
         gisaid_fasta = "data/gisaid_cov2020_sequences.fasta"
     output:
         sequences = "data/sequences.fasta"
+    params:
+        min_length = 15000
     shell:
         """
 	if [[ ! -f "data/sequences.fasta" && -f "data/gisaid_cov2020_sequences.fasta" ]]
 	then
-		scripts/normalize_gisaid_fasta.sh data/gisaid_cov2020_sequences.fasta data/sequences.fasta
+		scripts/normalize_gisaid_fasta.sh data/gisaid_cov2020_sequences.fasta data/sequences.fasta {params.min_length}
 	fi
         """
