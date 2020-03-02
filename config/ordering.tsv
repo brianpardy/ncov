@@ -12,6 +12,7 @@ location	Guangdong
 location	Shenzhen
 location	Zhuhai
 location	Huaian
+location	Qingdao
 location	Guangzhou
 location	Foshan
 location	Hong Kong
@@ -37,15 +38,19 @@ location	Contamines
 location	Leuven
 location	Starnberg
 location	Rome
+location	Milan
 location	England
 location	Rovaniemi
 location	Jönköping
+location	Helsinki
 location	Sao Paulo
+location	Mexico City
 location	Seattle
 location	Solano County
 location	Orange County
 location	Los Angeles
 location	California
+location	Snohomish County
 location	Phoenix
 location	Chicago
 location	Illinois
@@ -89,17 +94,21 @@ division	Flanders
 division	Bavaria
 division	Baden-Wuerttemberg
 division	Lazio
+division	Rome
+division	Lombardy
 division	England
 division	Lapland
 division	Småland
+division	Helsinki
 division	Sao Paulo
-division	Washington
-division	California
+division	Mexico City
+division	Texas
 division	Arizona
+division	California
 division	Illinois
 division	Wisconsin
 division	Massachusetts
-division	Texas
+division	Washington
 division	British Columbia
 
 country	China
@@ -121,5 +130,6 @@ country	United Kingdom
 country	Finland
 country	Sweden
 country	Brazil
+country	Mexico
 country	USA
 country	Canada

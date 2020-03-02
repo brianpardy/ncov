@@ -17,6 +17,7 @@ location	Guangzhou	23.123972	113.292889
 location	Gyeonggi	37.397957	127.380864
 location	Hangzhou	30.272732	120.154501
 location	Hefei	31.806280	117.227234
+location	Helsinki	60.1698848	24.9384991
 location	Hong Kong	22.3964	114.1095
 location	Huaian	33.574586	119.132155
 location	Illinois	40.088552	-89.301876
@@ -50,6 +51,7 @@ location	Thanh Hoa	19.805359	105.784515
 location	Tokyo	35.683441	139.766131
 location	Wisconsin	44.535145	-89.527762
 location	Wuhan	30.554807	114.271501
+location	Xishuangbanna	21.995	100.837
 location	Yongchuan	29.374774	105.925391
 location	Zhengzhou	34.714074	113.621939
 location	Zhongxian	30.323947	108.012855
@@ -71,6 +73,7 @@ division	Flanders	51.056536	4.254283
 division	Fujian	26.284852	118.122938
 division	Guangdong	23.615762	114.483257
 division	Gyeonggi	37.397957	127.380864
+division	Helsinki	60.1698848	24.9384991
 division	Henan	33.817629	113.690243
 division	Hong Kong	22.3964	114.1095
 division	Hubei	31.095477	112.676644
@@ -86,7 +89,9 @@ division	Kathmandu	27.712907	85.323557
 division	Kyoto	35.007542	135.768455
 division	Lapland	67.700017	26.273752
 division	Lazio	41.994328	12.622686
+division	Lombardy	45.4791	9.8452
 division	Massachusetts	42.340741	-71.998513
+division	Mexico City	19.404497	-99.143041
 division	Nara	34.371026	135.887389
 division	New South Wales	-32.688430	146.228414
 division	Nonthaburi	13.852511	100.522791
@@ -99,6 +104,7 @@ division	Sichuan	30.709229	102.693949
 division	Sihanoukville	10.616351	103.512278
 division	Singapore	1.344189	103.867546
 division	Småland	57.528294	14.463824
+location	Snohomish County	48.006	-122.0731
 division	Seoul	37.548278	126.990916
 division	Taiwan	23.816900	121.031365
 division	Texas	31.146868	-99.188758
