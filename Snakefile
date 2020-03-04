@@ -24,7 +24,8 @@ rule files:
         auspice_config_zh = "config/auspice_config_zh.json",
         lat_longs = "config/lat_longs.tsv",
         description = "config/description.md",
-        description_zh = "config/description_zh.md"
+        description_zh = "config/description_zh.md",
+        clades = "config/clades.tsv"
 
 files = rules.files.params
 
@@ -232,6 +233,23 @@ rule traits:
             --sampling-bias-correction {params.sampling_bias_correction} \
         """
 
+rule clades:
+    message: "Adding internal clade labels"
+    input:
+        tree = rules.refine.output.tree,
+        aa_muts = rules.translate.output.node_data,
+        nuc_muts = rules.ancestral.output.node_data,
+        clades = files.clades
+    output:
+        clade_data = "results/clades.json"
+    shell:
+        """
+        augur clades --tree {input.tree} \
+            --mutations {input.nuc_muts} {input.aa_muts} \
+            --clades {input.clades} \
+            --output-node-data {output.clade_data}
+        """  
+
 rule colors:
     message: "Constructing colors file"
     input:
@@ -255,11 +273,12 @@ rule export:
         branch_lengths = rules.refine.output.node_data,
         nt_muts = rules.ancestral.output.node_data,
         aa_muts = rules.translate.output.node_data,
-        traits = rules.traits.output.node_data,
+        # traits = rules.traits.output.node_data,
         auspice_config = files.auspice_config,
         colors = rules.colors.output.colors,
         lat_longs = files.lat_longs,
-        description = files.description
+        description = files.description,
+        clades = rules.clades.output.clade_data
     output:
         auspice_json = "results/ncov_with_accessions.json"
     shell:
@@ -267,7 +286,7 @@ rule export:
         augur export v2 \
             --tree {input.tree} \
             --metadata {input.metadata} \
-            --node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts} {input.traits} \
+            --node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts} {input.clades} \
             --auspice-config {input.auspice_config} \
             --colors {input.colors} \
             --lat-longs {input.lat_longs} \
@@ -283,11 +302,12 @@ rule export_gisaid:
         branch_lengths = rules.refine.output.node_data,
         nt_muts = rules.ancestral.output.node_data,
         aa_muts = rules.translate.output.node_data,
-        traits = rules.traits.output.node_data,
+        # traits = rules.traits.output.node_data,
         auspice_config = files.auspice_config_gisaid,
         colors = rules.colors.output.colors,
         lat_longs = files.lat_longs,
-        description = files.description
+        description = files.description,
+        clades = rules.clades.output.clade_data
     output:
         auspice_json = "results/ncov_gisaid_with_accessions.json"
     shell:
@@ -295,7 +315,7 @@ rule export_gisaid:
         augur export v2 \
             --tree {input.tree} \
             --metadata {input.metadata} \
-            --node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts} {input.traits} \
+            --node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts} {input.clades} \
             --auspice-config {input.auspice_config} \
             --colors {input.colors} \
             --lat-longs {input.lat_longs} \
@@ -311,11 +331,12 @@ rule export_zh:
         branch_lengths = rules.refine.output.node_data,
         nt_muts = rules.ancestral.output.node_data,
         aa_muts = rules.translate.output.node_data,
-        traits = rules.traits.output.node_data,
+        # traits = rules.traits.output.node_data,
         auspice_config = files.auspice_config_zh,
         colors = rules.colors.output.colors,
         lat_longs = files.lat_longs,
-        description = files.description_zh
+        description = files.description_zh,
+        clades = rules.clades.output.clade_data
     output:
         auspice_json = "results/ncov_zh_with_accessions.json"
     shell:
@@ -323,7 +344,7 @@ rule export_zh:
         augur export v2 \
             --tree {input.tree} \
             --metadata {input.metadata} \
-            --node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts} {input.traits} \
+            --node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts} {input.clades} \
             --auspice-config {input.auspice_config} \
             --colors {input.colors} \
             --lat-longs {input.lat_longs} \

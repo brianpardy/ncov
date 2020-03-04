@@ -80,6 +80,7 @@ division	Kanagawa
 division	Gyeonggi
 division	Chungcheongnam
 division	Seoul
+division	South Korea
 division	Kathmandu
 division	Thanh Hoa
 division	Sihanoukville
@@ -94,10 +95,12 @@ division	Auvergne Rhone Alpes
 division	Flanders
 division	Bavaria
 division	Baden-Wuerttemberg
+division	Zurich
 division	Lazio
 division	Rome
 division	Lombardy
 division	England
+division	Scotland
 division	Lapland
 division	Småland
 division	Helsinki
@@ -127,6 +130,7 @@ country	Australia
 country	France
 country	Belgium
 country	Germany
+country	Switzerland
 country	Italy
 country	United Kingdom
 country	Finland
