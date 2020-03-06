@@ -1,4 +1,5 @@
 location	Aichi	35.067543	137.334061
+location	Auckland	-36.8314	174.7606
 location	Bangkok	13.803139	100.491612
 location	Beijing	40.071320	116.406908
 location	Boston	42.354750	-71.061299
@@ -16,6 +17,7 @@ location	Guangdong	23.615762	114.483257
 location	Guangzhou	23.123972	113.292889
 location	Gyeonggi	37.397957	127.380864
 location	Hangzhou	30.272732	120.154501
+location	Heinsberg District	51.0499	6.1163
 location	Hefei	31.806280	117.227234
 location	Helsinki	60.1698848	24.9384991
 location	Hong Kong	22.3964	114.1095
@@ -25,11 +27,12 @@ location	Jingzhou	30.350752	112.237294
 location	Jönköping	57.777979	14.160453
 location	Kaohsiung	22.622632	120.312435
 location	Kathmandu	27.712907	85.323557
-location	King County	47.449221	121.864246
+location	King County	47.449221	-121.864246
 location	Kunming	25.013024	102.866742
 location	Kyoto	35.007542	135.768455
 location	Leuven	50.880674	4.700109
 location	Los Angeles	34.029267	-118.242865
+location	Milan	45.474	9.177
 location	Orange County	33.689584	-117.788718
 location	Paris	48.853884	2.341738
 location	Phoenix	33.433362	-112.068786
@@ -64,6 +67,7 @@ location	Zhuhai	22.271346	113.562879
 division	Aichi	35.067543	137.334061
 division	Anhui	31.754331	117.211441
 division	Arizona	34.220707	-111.657462
+division	Auckland	-36.8314	174.7606
 division	Auvergne Rhone Alpes	45.126511	5.480724
 division	Baden-Wuerttemberg	48.712618	9.134030
 division	Bavaria	48.1382614	11.5845093
@@ -90,7 +94,9 @@ division	Kanagawa	35.403801	139.294288
 division	Kansai	34.778675	135.880055
 division	Kanto	36.167777	139.170466
 division	Kathmandu	27.712907	85.323557
+division	Kerala	10.359825	76.399550
 division	Kyoto	35.007542	135.768455
+division	Lagos	6.542520	3.286661
 division	Lapland	67.700017	26.273752
 division	Lazio	41.994328	12.622686
 division	Lombardy	45.4791	9.8452
@@ -98,6 +104,7 @@ division	Massachusetts	42.340741	-71.998513
 division	Mexico City	19.404497	-99.143041
 division	Nara	34.371026	135.887389
 division	New South Wales	-32.688430	146.228414
+division	North Rhine Westphalia	51.44	7.705
 division	Nonthaburi	13.852511	100.522791
 division	Ontario	44.429	-79.377
 division	Osaka	34.648720	135.525013

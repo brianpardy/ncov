@@ -35,6 +35,8 @@ location	Singapore
 location	Gold Coast
 location	Sydney
 location	Clayton
+location	Auckland
+location	Heinsberg District
 location	Paris
 location	Contamines
 location	Leuven
@@ -61,6 +63,7 @@ location	Wisconsin
 location	Boston
 
 division	Hubei
+division	Beijing
 division	Anhui
 division	Jiangxi
 division	Chongqing
@@ -84,6 +87,7 @@ division	Chungcheongnam
 division	Seoul
 division	South Korea
 division	Kathmandu
+division	Kerala
 division	Thanh Hoa
 division	Sihanoukville
 division	Nonthaburi
@@ -92,13 +96,16 @@ division	Gyeonggi
 division	Queensland
 division	New South Wales
 division	Victoria
+division	Auckland
 division	Ile De France
 division	Auvergne Rhone Alpes
 division	Flanders
 division	Bavaria
 division	Baden-Wuerttemberg
+division	North Rhine Westphalia
 division	Zurich
 division	Lazio
+division	Milan
 division	Rome
 division	Lombardy
 division	England
@@ -106,6 +113,7 @@ division	Scotland
 division	Lapland
 division	Småland
 division	Helsinki
+division	Lagos
 division	Sao Paulo
 division	Mexico City
 division	Texas
@@ -124,11 +132,13 @@ country	Taiwan
 country	Japan
 country	South Korea
 country	Nepal
+country	India
 country	Vietnam
 country	Cambodia
 country	Thailand
 country	Singapore
 country	Australia
+country	New Zealand
 country	France
 country	Belgium
 country	Germany
@@ -137,6 +147,7 @@ country	Italy
 country	United Kingdom
 country	Finland
 country	Sweden
+country	Nigeria
 country	Brazil
 country	Mexico
 country	USA
