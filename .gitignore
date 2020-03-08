@@ -2,9 +2,11 @@
 # (or at least out of _this_ git repo).
 results/
 build/
+auspice/
 data/ncov.fasta
 data/ncov.fasta-e
 data/sequences.fasta
+data/*ndjson
 data/sequences.fasta.old
 data/gisaid_cov2020_sequences.fasta
 auspice/ncov_*.json

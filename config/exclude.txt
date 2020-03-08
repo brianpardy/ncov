@@ -68,3 +68,6 @@ pangolin/Guandong/1/2019
 pangolin/China/MP789/2019
 bat/Yunnan/RmYN02/2019
 bat/Yunnan/RmYN01/2019
+
+# Temporarily excluded
+USA/CA-CDPH-UC1/2020
