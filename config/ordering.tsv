@@ -37,6 +37,28 @@ location	Sydney
 location	Clayton
 location	Auckland
 location	Heinsberg District
+location	Delft
+location	Utrecht
+location	Zeewolde
+location	Loon op zand
+location	Berlicum
+location	Blaricum
+location	Hardinxveld Giessendam
+location	Coevorden
+location	Diemen
+location	Nootdorp
+location	Naarden
+location	Eindhoven
+location	Houten
+location	Haarlem
+location	Nieuwendijk
+location	Andel
+location	Rotterdam
+location	Oss
+location	Tilburg
+location	Helmond
+location	Oisterwijk
+location	Dalen
 location	Paris
 location	Contamines
 location	Leuven
@@ -51,6 +73,7 @@ location	Sao Paulo
 location	Mexico City
 location	Seattle
 location	Solano County
+location	Sonoma County
 location	Orange County
 location	Los Angeles
 location	California
@@ -103,12 +126,21 @@ division	Flanders
 division	Bavaria
 division	Baden-Wuerttemberg
 division	North Rhine Westphalia
+division	Andel
+division	Utrecht
+division	Drenthe
+division	North brabant
+division	Flevoland
+division	South Holland
+division	North Holland
+division	Luxemburg
 division	Zurich
 division	Lazio
 division	Milan
 division	Rome
 division	Lombardy
 division	England
+division	Wales
 division	Scotland
 division	Lapland
 division	Småland
@@ -140,7 +172,9 @@ country	Singapore
 country	Australia
 country	New Zealand
 country	France
+country	Netherlands
 country	Belgium
+country	Luxemburg
 country	Germany
 country	Switzerland
 country	Italy
