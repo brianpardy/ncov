@@ -104,7 +104,7 @@ rule mask:
     params:
         mask_from_beginning = 130,
         mask_from_end = 50,
-        mask_sites = "18529 28881 28882 28883"
+        mask_sites = "18529"
     shell:
         """
         python3 scripts/mask-alignment.py \
@@ -219,7 +219,7 @@ rule traits:
     output:
         node_data = "results/traits.json",
     params:
-        columns = "division",
+        columns = "division_exposure",
         sampling_bias_correction = 2.5
     shell:
         """
@@ -265,6 +265,7 @@ rule colors:
             --output {output.colors}
         """
 
+
 rule export:
     message: "Exporting data files for for auspice"
     input:
@@ -273,7 +274,7 @@ rule export:
         branch_lengths = rules.refine.output.node_data,
         nt_muts = rules.ancestral.output.node_data,
         aa_muts = rules.translate.output.node_data,
-        # traits = rules.traits.output.node_data,
+        traits = rules.traits.output.node_data,
         auspice_config = files.auspice_config,
         colors = rules.colors.output.colors,
         lat_longs = files.lat_longs,
@@ -286,7 +287,7 @@ rule export:
         augur export v2 \
             --tree {input.tree} \
             --metadata {input.metadata} \
-            --node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts} {input.clades} \
+            --node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts} {input.traits} {input.clades} \
             --auspice-config {input.auspice_config} \
             --colors {input.colors} \
             --lat-longs {input.lat_longs} \
@@ -302,7 +303,7 @@ rule export_gisaid:
         branch_lengths = rules.refine.output.node_data,
         nt_muts = rules.ancestral.output.node_data,
         aa_muts = rules.translate.output.node_data,
-        # traits = rules.traits.output.node_data,
+        traits = rules.traits.output.node_data,
         auspice_config = files.auspice_config_gisaid,
         colors = rules.colors.output.colors,
         lat_longs = files.lat_longs,
@@ -315,13 +316,15 @@ rule export_gisaid:
         augur export v2 \
             --tree {input.tree} \
             --metadata {input.metadata} \
-            --node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts} {input.clades} \
+            --node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts} {input.traits} {input.clades} \
             --auspice-config {input.auspice_config} \
             --colors {input.colors} \
             --lat-longs {input.lat_longs} \
             --description {input.description} \
             --output {output.auspice_json}
         """
+
+
 
 rule export_zh:
     message: "Exporting data files for for auspice"
@@ -331,7 +334,7 @@ rule export_zh:
         branch_lengths = rules.refine.output.node_data,
         nt_muts = rules.ancestral.output.node_data,
         aa_muts = rules.translate.output.node_data,
-        # traits = rules.traits.output.node_data,
+        traits = rules.traits.output.node_data,
         auspice_config = files.auspice_config_zh,
         colors = rules.colors.output.colors,
         lat_longs = files.lat_longs,
@@ -344,7 +347,7 @@ rule export_zh:
         augur export v2 \
             --tree {input.tree} \
             --metadata {input.metadata} \
-            --node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts} {input.clades} \
+            --node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts} {input.traits} {input.clades} \
             --auspice-config {input.auspice_config} \
             --colors {input.colors} \
             --lat-longs {input.lat_longs} \
@@ -352,10 +355,52 @@ rule export_zh:
             --output {output.auspice_json}
         """
 
-rule fix_colorings:
-    message: "Remove extraneous colorings"
+rule incorporate_travel_history:
+    message: "Adjusting main auspice JSON to take into account travel history"
     input:
+        lat_longs = files.lat_longs,
+        colors = rules.colors.output.colors,
         auspice_json = rules.export.output.auspice_json
+    output:
+        auspice_json = "results/ncov_with_accessions_and_travel_branches.json"
+    shell:
+        """
+        python3 ./scripts/modify_tree_according_to_division_exposure.py \
+            {input.auspice_json} {input.colors} {input.lat_longs} {output.auspice_json}
+        """
+
+rule incorporate_travel_history_gisaid:
+    message: "Adjusting GISAID auspice JSON to take into account travel history"
+    input:
+        lat_longs = files.lat_longs,
+        colors = rules.colors.output.colors,
+        auspice_json = rules.export_gisaid.output.auspice_json
+    output:
+        auspice_json = "results/ncov_gisaid_with_accessions_and_travel_branches.json"
+    shell:
+        """
+        python3 ./scripts/modify_tree_according_to_division_exposure.py \
+            {input.auspice_json} {input.colors} {input.lat_longs} {output.auspice_json}
+        """
+
+rule incorporate_travel_history_zh:
+    message: "Adjusting ZH auspice JSON to take into account travel history"
+    input:
+        lat_longs = files.lat_longs,
+        colors = rules.colors.output.colors,
+        auspice_json = rules.export_zh.output.auspice_json
+    output:
+        auspice_json = "results/ncov_zh_with_accessions_and_travel_branches.json"
+    shell:
+        """
+        python3 ./scripts/modify_tree_according_to_division_exposure.py \
+            {input.auspice_json} {input.colors} {input.lat_longs} {output.auspice_json}
+        """
+
+rule fix_colorings:
+    message: "Remove extraneous colorings for main build"
+    input:
+        auspice_json = rules.incorporate_travel_history.output.auspice_json
     output:
         auspice_json = "auspice/ncov.json"
     shell:
@@ -366,9 +411,9 @@ rule fix_colorings:
         """
 
 rule fix_colorings_gisaid:
-    message: "Remove extraneous colorings"
+    message: "Remove extraneous colorings for the GISAID build"
     input:
-        auspice_json = rules.export_gisaid.output.auspice_json
+        auspice_json = rules.incorporate_travel_history_gisaid.output.auspice_json
     output:
         auspice_json = "auspice/ncov_gisaid.json"
     shell:
@@ -379,9 +424,9 @@ rule fix_colorings_gisaid:
         """
 
 rule fix_colorings_zh:
-    message: "Remove extraneous colorings"
+    message: "Remove extraneous colorings for the Chinese language build"
     input:
-        auspice_json = rules.export_zh.output.auspice_json
+        auspice_json = rules.incorporate_travel_history_zh.output.auspice_json
     output:
         auspice_json = "auspice/ncov_zh.json"
     shell:
@@ -394,7 +439,7 @@ rule fix_colorings_zh:
 rule dated_json:
     message: "Copying dated Auspice JSON"
     input:
-        auspice_json = rules.export.output.auspice_json
+        auspice_json = rules.fix_colorings.output.auspice_json
     output:
         dated_auspice_json = rules.all.input.dated_auspice_json
     shell:
