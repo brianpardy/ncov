@@ -37,11 +37,11 @@ Jingzhou/HBCDC-HB-01/2020
 Wuhan/HBCDC-HB-04/2019
 
 # Missing mutations
-#Netherlands/Oisterwijk_1364072/2020
-#Netherlands/Utrecht_1364066/2020
+Netherlands/Oisterwijk_1364072/2020
+Netherlands/Utrecht_1364066/2020
 
 # Confusing phylogeography
-#Netherlands/Rotterdam_1363790/2020
+Netherlands/Rotterdam_1363790/2020
 
 # These have more tip-specific divergence than expected
 Beijing/IVDC-BJ-005/2020
@@ -69,28 +69,30 @@ bat/Yunnan/RmYN02/2019
 bat/Yunnan/RmYN01/2019
 
 # Temporarily excluded
-#USA/CruiseA-1/2020
-#USA/CruiseA-10/2020
-#USA/CruiseA-11/2020
-#USA/CruiseA-12/2020
-#USA/CruiseA-13/2020
-#USA/CruiseA-14/2020
-#USA/CruiseA-15/2020
-#USA/CruiseA-16/2020
-#USA/CruiseA-17/2020
-#USA/CruiseA-18/2020
-#USA/CruiseA-2/2020
-#USA/CruiseA-3/2020
-#USA/CruiseA-4/2020
-#USA/CruiseA-5/2020
-#USA/CruiseA-6/2020
-#USA/CruiseA-7/2020
-#USA/CruiseA-8/2020
-#USA/CruiseA-9/2020
+USA/CruiseA-1/2020
+USA/CruiseA-10/2020
+USA/CruiseA-11/2020
+USA/CruiseA-12/2020
+USA/CruiseA-13/2020
+USA/CruiseA-14/2020
+USA/CruiseA-15/2020
+USA/CruiseA-16/2020
+USA/CruiseA-17/2020
+USA/CruiseA-18/2020
+USA/CruiseA-2/2020
+USA/CruiseA-3/2020
+USA/CruiseA-4/2020
+USA/CruiseA-5/2020
+USA/CruiseA-6/2020
+USA/CruiseA-7/2020
+USA/CruiseA-8/2020
+USA/CruiseA-9/2020
 
-# temporarily excluded until names are fixed
-#USA/WA14-UW10/2020
-#USA/WA15-UW11/2020
-#USA/WA16-UW12/2020
-#USA/WA17-UW13/2020
-#USA/WA18-UW14/2020
+
+# Temporarily excluded
+USA/CA-CDPH-UC5/2020
+USA/CA-CDPH-UC6/2020
+USA/CA-CDPH-UC7/2020
+USA/CA-CDPH-UC8/2020
+USA/CA-CDPH-UC9/2020
+USA/UC-CDPH-UC11/2020
