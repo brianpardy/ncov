@@ -69,24 +69,43 @@ bat/Yunnan/RmYN02/2019
 bat/Yunnan/RmYN01/2019
 
 # Temporarily excluded
-#USA/CruiseA-1/2020
-#USA/CruiseA-10/2020
-#USA/CruiseA-11/2020
-#USA/CruiseA-12/2020
-#USA/CruiseA-13/2020
-#USA/CruiseA-14/2020
-#USA/CruiseA-15/2020
-#USA/CruiseA-16/2020
-#USA/CruiseA-17/2020
-#USA/CruiseA-18/2020
-#USA/CruiseA-2/2020
-#USA/CruiseA-3/2020
-#USA/CruiseA-4/2020
-#USA/CruiseA-5/2020
-#USA/CruiseA-6/2020
-#USA/CruiseA-7/2020
-#USA/CruiseA-8/2020
-#USA/CruiseA-9/2020
+USA/CruiseA-1/2020
+USA/CruiseA-10/2020
+USA/CruiseA-11/2020
+USA/CruiseA-12/2020
+USA/CruiseA-13/2020
+USA/CruiseA-14/2020
+USA/CruiseA-15/2020
+USA/CruiseA-16/2020
+USA/CruiseA-17/2020
+USA/CruiseA-18/2020
+USA/CruiseA-2/2020
+USA/CruiseA-3/2020
+USA/CruiseA-4/2020
+USA/CruiseA-5/2020
+USA/CruiseA-6/2020
+USA/CruiseA-7/2020
+USA/CruiseA-8/2020
+USA/CruiseA-9/2020
 
-# Temporarily excluded, gap makes look very divergent
-USA/WA11-UW7/2020
+# Temporarily excluded
+Brazil/SPBR-03/2020
+Brazil/SPBR-04/2020
+Brazil/SPBR-05/2020
+Brazil/SPBR-06/2020
+
+# Temporarily excluded
+#England/200940527/2020
+#England/200960041/2020
+#England/200960515/2020
+#England/200981386/2020
+#England/200990006/2020
+#England/200990723/2020
+#England/200990724/2020
+#England/200990725/2020
+#England/201000003/2020
+#Switzerland/VD5615/2020
+#Switzerland/GE9586/2020
+#Switzerland/BL0902/2020
+#Switzerland/GE5373/2020
+#Switzerland/GE3121/2020
