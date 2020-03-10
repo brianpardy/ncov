@@ -87,3 +87,6 @@ bat/Yunnan/RmYN01/2019
 #USA/CruiseA-7/2020
 #USA/CruiseA-8/2020
 #USA/CruiseA-9/2020
+
+# Temporarily excluded, gap makes look very divergent
+USA/WA11-UW7/2020
