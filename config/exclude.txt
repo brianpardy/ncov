@@ -109,3 +109,6 @@ bat/Yunnan/RmYN01/2019
 #Switzerland/BL0902/2020
 #Switzerland/GE5373/2020
 #Switzerland/GE3121/2020
+
+# Temporarily excluded BJP, too variant without fill-gaps
+USA/WA11-UW7/2020
