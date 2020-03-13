@@ -18,6 +18,7 @@ location	Cork	51.899	-8.460
 location	Dalen	52.6994	6.7568
 location	Delft	52.0116	4.3571
 location	Diemen	52.3390	4.9592
+location	Duesseldorf	51.22166	6.75289
 location	Eindhoven	51.4416	5.4697
 location	England	52.405994	-1.671707
 location	Foshan	23.018766	113.121428
@@ -28,6 +29,7 @@ location	Gyeonggi	37.397957	127.380864
 location	Haarlem	52.3874	4.6462
 location	Hangzhou	30.272732	120.154501
 location	Heinsberg District	51.0499	6.1163
+location	Heinsberg	51.056262	6.113915
 location	Hefei	31.806280	117.227234
 location	Helmond	51.4793	5.6570
 location	Helsinki	60.1698848	24.9384991
@@ -44,6 +46,7 @@ location	Kyoto	35.007542	135.768455
 location	Leuven	50.880674	4.700109
 location	Los Angeles	34.029267	-118.242865
 location	Milan	45.474	9.177
+location	Munich	48.155742	11.549380
 location	Orange County	33.689584	-117.788718
 location	Paris	48.853884	2.341738
 location	Phoenix	33.433362	-112.068786
@@ -110,6 +113,8 @@ division	California	36.357039	-119.690182
 division	Chongqing	29.858721	107.375623
 division	Chungcheongnam	36.685948	126.799198
 division	Comunitat Valenciana	39.337	-0.354
+division	Cork	51.895349	-8.474381
+division	Dublin	53.343100	-6.262191
 division	England	52.405994	-1.671707
 division	Flanders	51.056536	4.254283
 division	Fujian	26.284852	118.122938
@@ -139,10 +144,12 @@ division	Lagos	6.542520	3.286661
 division	Lapland	67.700017	26.273752
 division	Lazio	41.994328	12.622686
 division	Limburg	51.230477	5.956744
+division	Limerick	52.662235	-8.627565
 division	Lombardy	45.4791	9.8452
 division	Luxembourg	49.755428	6.119486
 division	Massachusetts	42.340741	-71.998513
 division	Mexico City	19.404497	-99.143041
+division	Minnesota	46.126042	-94.619581
 division	Nara	34.371026	135.887389
 division	New South Wales	-32.688430	146.228414
 division	North Brabant	51.4827	5.2322
@@ -154,6 +161,7 @@ division	Osaka	34.648720	135.525013
 division	Overijssel	52.436273	6.463628
 division	Portugal	39.540460	-8.174701
 division	Queensland	-23.094025	144.192275
+division	Santiago	-33.383304	-70.530623
 division	Sao Paulo	-23.598060	-46.660537
 division	Scotland	56.415858	-4.090641
 division	Shandong	36.298013	118.193884
@@ -165,6 +173,7 @@ division	South Korea	36.609249	127.917932
 division	Småland	57.528294	14.463824
 division	Seoul	37.548278	126.990916
 division	Taiwan	23.816900	121.031365
+division	Talca	-35.462909	-71.370960
 division	Ticino	46.345334	8.774813
 division	Texas	31.146868	-99.188758
 division	Thanh Hoa	20.026365	105.439044

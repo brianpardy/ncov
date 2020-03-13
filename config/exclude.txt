@@ -39,9 +39,13 @@ Wuhan/HBCDC-HB-04/2019
 # Missing mutations
 Netherlands/Oisterwijk_1364072/2020
 Netherlands/Utrecht_1364066/2020
+Ireland/COR-20134/2020
 
 # Confusing phylogeography
 Netherlands/Rotterdam_1363790/2020
+
+# Missing precise date
+Netherlands/NoordBrabant_34/2020
 
 # These have more tip-specific divergence than expected
 Beijing/IVDC-BJ-005/2020

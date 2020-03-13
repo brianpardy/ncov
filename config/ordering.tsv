@@ -37,6 +37,9 @@ location	Sydney
 location	Clayton
 location	Auckland
 location	Heinsberg District
+location	Heinsberg
+location	Munich
+location	Duesseldorf
 location	Delft
 location	Utrecht
 location	Zeewolde
@@ -101,6 +104,7 @@ division	Shandong
 division	Zhejiang
 division	Fujian
 division	Guangdong
+division	Shanghai
 division	Hong Kong
 division	Taiwan
 division	Aichi
@@ -128,6 +132,7 @@ division	Ile de France
 division	Auvergne Rhone Alpes
 division	Flanders
 division	Bavaria
+
 division	Baden-Wuerttemberg
 division	North Rhine Westphalia
 division	Utrecht
@@ -153,13 +158,17 @@ division	Lombardy
 division	Usti nad Labem
 division	England
 division	Wales
-division	Ireland
+division	Cork
+division	Dublin
+division	Limerick
 division	Scotland
 division	Lapland
 division	Småland
 division	Helsinki
 division	Portugal
 division	Lagos
+division	Santiago
+division	Talca
 division	Sao Paulo
 division	Mexico City
 division	Texas
@@ -167,6 +176,7 @@ division	Arizona
 division	California
 division	Illinois
 division	Wisconsin
+division	Minnesota
 division	Massachusetts
 division	New York
 division	Washington
@@ -201,6 +211,7 @@ country	Finland
 country	Sweden
 country	Portugal
 country	Nigeria
+country	Chile
 country	Brazil
 country	Mexico
 country	USA
