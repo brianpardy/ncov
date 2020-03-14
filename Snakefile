@@ -9,6 +9,7 @@ rule all:
     input:
         auspice_json = "auspice/ncov.json",
         dated_auspice_json = expand("auspice/ncov_{date}.json", date=get_todays_date()),
+	data_auspice_json = "../data/ncov.json",
         auspice_json_gisaid = "auspice/ncov_gisaid.json",
         auspice_json_zh = "auspice/ncov_zh.json"
 
@@ -441,10 +442,12 @@ rule dated_json:
     input:
         auspice_json = rules.fix_colorings.output.auspice_json
     output:
-        dated_auspice_json = rules.all.input.dated_auspice_json
+        dated_auspice_json = rules.all.input.dated_auspice_json,
+        data_auspice_json = rules.all.input.data_auspice_json
     shell:
         """
         cp {input.auspice_json} {output.dated_auspice_json}
+	cp {input.auspice_json} {output.data_auspice_json}
         """
 
 rule poisson_tmrca:
