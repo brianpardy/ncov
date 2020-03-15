@@ -7,7 +7,6 @@ data/ncov.fasta
 data/ncov.fasta-e
 data/sequences.fasta
 data/*ndjson
-data/sequences.fasta.old
 data/gisaid_cov2020_sequences.fasta
 auspice/ncov_*.json
 auspice/sars-like-cov.json
