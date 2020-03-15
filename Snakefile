@@ -9,7 +9,6 @@ rule all:
     input:
         auspice_json = "auspice/ncov.json",
         dated_auspice_json = expand("auspice/ncov_{date}.json", date=get_todays_date()),
-	data_auspice_json = "../data/ncov.json",
         auspice_json_gisaid = "auspice/ncov_gisaid.json",
         auspice_json_zh = "auspice/ncov_zh.json"
 
@@ -58,7 +57,9 @@ rule filter:
     output:
         sequences = "results/filtered.fasta"
     params:
-        min_length = 15000
+        min_length = 15000,
+        group_by = "country",
+        sequences_per_group = 500
     shell:
         """
         augur filter \
@@ -67,13 +68,16 @@ rule filter:
             --include {input.include} \
             --exclude {input.exclude} \
             --min-length {params.min_length} \
+            --group-by {params.group_by} \
+            --sequences-per-group {params.sequences_per_group} \
             --output {output.sequences}
         """
 
 rule align:
     message:
         """
-        Aligning sequences to {input.reference}. Gaps are considered real.
+        Aligning sequences to {input.reference}
+          - gaps relative to reference are considered real
         """
     input:
         sequences = rules.filter.output.sequences,
@@ -86,7 +90,7 @@ rule align:
             --sequences {input.sequences} \
             --reference-sequence {input.reference} \
             --output {output.alignment} \
-	    --nthreads auto \
+            --nthreads auto \
             --remove-reference
         """
 
@@ -105,7 +109,7 @@ rule mask:
     params:
         mask_from_beginning = 130,
         mask_from_end = 50,
-        mask_sites = "18529"
+        mask_sites = "18529 29849 29851 29853"
     shell:
         """
         python3 scripts/mask-alignment.py \
@@ -172,7 +176,11 @@ rule refine:
         """
 
 rule ancestral:
-    message: "Reconstructing ancestral sequences and mutations. Not inferring ambiguous mutations"
+    message:
+        """
+        Reconstructing ancestral sequences and mutations
+          - not inferring ambiguous mutations
+        """
     input:
         tree = rules.refine.output.tree,
         alignment = rules.mask.output
@@ -266,6 +274,18 @@ rule colors:
             --output {output.colors}
         """
 
+rule recency:
+    message: "Use metadata on submission date to construct submission recency field"
+    input:
+        metadata = rules.download.output.metadata
+    output:
+        "results/recency.json"
+    shell:
+        """
+        python3 scripts/construct-recency-from-submission-date.py \
+            --metadata {input.metadata} \
+            --output {output}
+        """
 
 rule export:
     message: "Exporting data files for for auspice"
@@ -280,7 +300,8 @@ rule export:
         colors = rules.colors.output.colors,
         lat_longs = files.lat_longs,
         description = files.description,
-        clades = rules.clades.output.clade_data
+        clades = rules.clades.output.clade_data,
+        recency = rules.recency.output
     output:
         auspice_json = "results/ncov_with_accessions.json"
     shell:
@@ -288,7 +309,7 @@ rule export:
         augur export v2 \
             --tree {input.tree} \
             --metadata {input.metadata} \
-            --node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts} {input.traits} {input.clades} \
+            --node-data {input.branch_lengths} {input.nt_muts} {input.aa_muts} {input.traits} {input.clades} {input.recency}\
             --auspice-config {input.auspice_config} \
             --colors {input.colors} \
             --lat-longs {input.lat_longs} \
@@ -442,12 +463,10 @@ rule dated_json:
     input:
         auspice_json = rules.fix_colorings.output.auspice_json
     output:
-        dated_auspice_json = rules.all.input.dated_auspice_json,
-        data_auspice_json = rules.all.input.data_auspice_json
+        dated_auspice_json = rules.all.input.dated_auspice_json
     shell:
         """
         cp {input.auspice_json} {output.dated_auspice_json}
-	cp {input.auspice_json} {output.data_auspice_json}
         """
 
 rule poisson_tmrca:
@@ -510,19 +529,3 @@ rule clean:
         "auspice"
     shell:
         "rm -rfv {params}"
-
-rule gisaid:
-    message: "Normalizing GISAID download"
-    input:
-        gisaid_fasta = "data/gisaid_cov2020_sequences.fasta"
-    output:
-        sequences = "data/sequences.fasta"
-    params:
-        min_length = 15000
-    shell:
-        """
-	if [[ ! -f "data/sequences.fasta" && -f "data/gisaid_cov2020_sequences.fasta" ]]
-	then
-		scripts/normalize_gisaid_fasta.sh data/gisaid_cov2020_sequences.fasta data/sequences.fasta {params.min_length}
-	fi
-        """

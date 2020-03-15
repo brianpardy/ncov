@@ -12,7 +12,7 @@
     },
     {
       "key": "division",
-      "title": "Admin division",
+      "title": "Admin Division",
       "type": "categorical"
     },
     {
@@ -51,6 +51,11 @@
       "type": "categorical"
     },
     {
+      "key": "recency",
+      "title": "Submission Date",
+      "type": "categorical"
+    },    
+    {
       "key": "gisaid_epi_isl"
     },
     {
@@ -70,6 +75,7 @@
     "branch_label": "aa"
   },
   "filters": [
+    "recency",
     "location",
     "division",
     "division_exposure",
