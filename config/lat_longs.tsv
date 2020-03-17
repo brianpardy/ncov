@@ -16,6 +16,7 @@ location	Coevorden	52.6614	6.7411
 location	Compiègne	49.408175	2.842839
 location	Contamines	45.820585	6.727730
 location	Cork	51.899	-8.460
+location	Crépy en Valois	49.234399	2.888491
 location	Dalen	52.6994	6.7568
 location	Delft	52.0116	4.3571
 location	Diemen	52.3390	4.9592
@@ -56,6 +57,8 @@ location	Milan	45.474	9.177
 location	Munich	48.155742	11.549380
 location	Naarden	52.2953	5.1604
 location	Naarden	52.2953	5.1604
+location	Nantes	47.203649	-1.552453
+location	Nassau County	40.7333	-73.58010
 location	Nieuwendijk	51.7774	4.8743
 location	Nootdorp	52.0440	4.3909
 location	Oisterwijk	51.568179	5.211873
@@ -68,10 +71,12 @@ location	Pingxiang	27.632413	113.892981
 location	Pontoise	49.049228	2.098595
 location	Qingdao	36.171557	120.398496
 location	Reims	49.253754	4.035860
+location	Rio de Janeiro	-22.89445	-43.2099
 location	Rome	41.881118	12.492817
 location	Rotterdam	51.9244	4.4777
 location	Rouen	49.4432	1.1000
 location	Rovaniemi	66.501553	25.728919
+location	San Diego County	33.001859	-116.824178
 location	San Francisco	37.757679	-122.440006
 location	Sao Paulo	-23.551096	-46.634874
 location	Seattle	47.748301	-121.850150
@@ -123,6 +128,7 @@ division	Comunitat Valenciana	39.337	-0.354
 division	Cork	51.895349	-8.474381
 division	Dublin	53.343100	-6.262191
 division	England	52.405994	-1.671707
+division	Finland	61.751734	26.186437
 division	Flanders	51.056536	4.254283
 division	Fujian	26.284852	118.122938
 division	Gelderland	52.042091	6.014860
@@ -138,6 +144,7 @@ division	Hubei	31.095477	112.676644
 division	Ile De France	48.724751	2.491522
 division	Grand Est	48.6998	6.1878
 division	Normandie	48.8799	0.1713
+division	Northern Ireland	54.602190	-6.687146
 division	Illinois	40.088552	-89.301876
 division	Iran	34.5732	51.876
 division	Ireland	52.865	-7.979
@@ -150,6 +157,7 @@ division	Kansai	34.778675	135.880055
 division	Kanto	36.167777	139.170466
 division	Kathmandu	27.712907	85.323557
 division	Kerala	10.359825	76.399550
+division	Kinshasa	-4.2978	15.2962
 division	Kyoto	35.007542	135.768455
 division	Lagos	6.542520	3.286661
 division	Lapland	67.700017	26.273752
@@ -171,8 +179,10 @@ division	Nonthaburi	13.852511	100.522791
 division	Ontario	44.429	-79.377
 division	Osaka	34.648720	135.525013
 division	Overijssel	52.436273	6.463628
+division	Pays de la Loire	47.640237	-0.647258
 division	Portugal	39.540460	-8.174701
 division	Queensland	-23.094025	144.192275
+division	Rio de Janeiro	-22.89445	-43.2099
 division	Santiago	-33.383304	-70.530623
 division	Sao Paulo	-23.598060	-46.660537
 division	Scotland	56.415858	-4.090641
@@ -206,5 +216,14 @@ division	Vaud	46.619469	6.472479
 division	Usti nad Labem	50.656527	14.053702
 division	Diamond Princess	35.046935	139.419325
 division	Grand Princess	37.579905	-123.673130
+division	Panama City	8.98333	-79.5166
+division	Leuven	50.8798	4.7005
+division	Bahia	12.5797	41.7007
+division	Sint-Niklaas	51.1559	4.1544
+division	Kraainem	50.8611	4.4593
+division	Huldenberg	50.7886	4.5881
+division	Espirito Santo	19.1834	40.3089
+division	Brussels	50.8503	4.3517
 
 country	Luxembourg	49.755428	6.119486
+country	Panama	8.98333	-79.5166

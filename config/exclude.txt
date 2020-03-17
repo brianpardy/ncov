@@ -49,13 +49,20 @@ Netherlands/NoordBrabant_34/2020
 
 # These have more tip-specific divergence than expected
 Beijing/IVDC-BJ-005/2020
+China/WF0023/2020
 Henan/IVDC-HeN-002/2020
+Guangdong/GDSZ202013-P0014/2020
 Shanghai/IVDC-SH-001/2020
 Shenzhen/SZTH-001/2020
 Shenzhen/SZTH-004/2020
 Wuhan/IPBCAMS-WH-05/2020
 Wuhan/IVDC-HB-envF54/2020
 Wuhan/WH02/2019
+Guangzhou/GZMU0016/2020
+
+# Excluding because seem to be too divergent - worth double checking
+Shandong/LY002/2020
+Shandong/LY001/2020
 
 # Bat and pangolin relatives, too divergent to be included here
 bat/Yunnan/RaTG13/2013

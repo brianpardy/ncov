@@ -113,13 +113,13 @@ Nell'aggiornamento di questa settimana:
 Di seguito elenchiamo alcune letture utili per familiarizzare con i concetti generali relativi al COVID-19 e al virus che ne è la causa, il SARS-CoV-2.
 
 <!-- This information will make interpreting the data we present in this narrative easier; if you aren't familiar with phylogenetic trees, we encourage you to check out the ['How to Read Phylogenies' narrative](https://nextstrain.org/narratives/trees-background) and come back when you're ready. -->
-Queste informazioni renderanno più semplice interpretare i dati che presenteremo più avanti; se non conosci gli alberi filogenetici, ti consigliamo di leggere ['Come leggere la filogenetica'](https://nextstrain.org/narratives/trees-background) e di continuare a leggere il resto più tardi.
+Queste informazioni renderanno più semplice interpretare i dati che presenteremo più avanti; se non conosci gli alberi filogenetici, ti consigliamo di leggere ['Come leggere la filogenetica'](https://nextstrain.org/narratives/trees-background/it) e di continuare a leggere il resto più tardi.
 
 <!-- This is right-side text -->
 ```auspiceMainDisplayMarkdown
 
 <!-- ## Background -->
-## Informazioni di base (in inglese)
+## Informazioni di base
 
 <div>
  <!-- <a href="https://nextstrain.org/help/coronavirus/human-CoV"><img alt="microscopy image of coronaviruses" width="100" src="https://nextstrain.org/static/ncov_narrative-76cfd610d11ef708d213a3170de9519f.png"/> Background on Coronaviruses </a> -->
@@ -129,7 +129,7 @@ Queste informazioni renderanno più semplice interpretare i dati che presenterem
   <a href="https://nextstrain.org/help/coronavirus/SARS-CoV-2"><img alt="illustrazione di un coronavirus" width="100" src="http://data.nextstrain.org/img_nCoV-CDC.jpg"/> Recent COVID-19 Outbreak Background </a>
 
  <!-- <a href="https://nextstrain.org/narratives/trees-background"><img alt="cartoon of a phylogenetic tree" width="100" src="http://data.nextstrain.org/img_toy_alignment_mini.png"/> How to Read Phylogenies</a> -->
-  <a href="https://nextstrain.org/narratives/trees-background"><img alt="disegno di un albero filogenetico" width="100" src="http://data.nextstrain.org/img_toy_alignment_mini.png"/> How to Read Phylogenies</a>
+  <a href="https://nextstrain.org/narratives/trees-background/it"><img alt="disegno di un albero filogenetico" width="100" src="http://data.nextstrain.org/img_toy_alignment_mini.png"/> Come leggere la filogenetica </a>
 </div>
 
 <!-- ## Further Reading -->
@@ -180,7 +180,7 @@ Per esempio, la cartina mostra molte poche sequenze dal sud del mondo. Questo NO
 <!-- Here, we see a large clade of sequences from Europe. -->
 Qui osserviamo un grane ramo che contiene sequenze provenienti dall'Europa.
 <!-- Notably, sequences from many different countries intercalate, indicating that COVID-19 is already circulating quite widely across Europe. -->
-Eà interessante notare che le sequenze di molti Paesi diversi risultano mescolate, e ciò indica che il COVID-19 sta già circolando piuttosto ampiamente in tutta Europa.
+È interessante notare che le sequenze di molti Paesi diversi risultano mescolate, e ciò indica che il COVID-19 sta già circolando piuttosto ampiamente in tutta Europa.
 <br><br>
 
 <!-- Zooming in on the map, we see that there are many links between Italy and other areas; however, it is important to keep in mind that the directionality of these links can't always be confidently inferred. Other hypotheses can also explain these data (e.g., if an unsampled case infected both a secondary case sequenced in Italy and a secondary case sequenced elsewhere). -->
@@ -264,7 +264,7 @@ Non è ancora chiaro se il virus si sia diffuso dalla nave da crociera a Washing
 <!-- Looking at samples from California, we see evidence for multiple introductions. -->
 Osservando i campioni provenienti dalla California, osserviamo evidenze di introduzioni multiple.
 <!-- More importantly, we see at least one cluster of closely related cases, all sampled in California over a short time period (click on ['Explore the Data'](https://nextstrain.org/ncov) and search for 'CA9' to see on example). -->
-Ancora più importante, vediamo che almeno un gruppo di casi molto simili geneticamente in campioni rilevati in California durante un breve periodo di tempo (clicca su ['Esplora i dati'](https://nextstrain.org/ncov) and cerca 'CA9' per vedere un esempio).
+Ancora più importante, vediamo che almeno un gruppo di casi molto simili geneticamente in campioni rilevati in California durante un breve periodo di tempo (clicca su ['Esplora i dati'](https://nextstrain.org/ncov) e cerca 'CA9' per vedere un esempio).
 <br><br>
 
 <!-- This strongly suggests that there is ongoing local transmission within California. -->
