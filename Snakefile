@@ -544,7 +544,7 @@ rule gisaid:
     output:
         sequences = "data/sequences.fasta"
     params:
-        min_length = 15000
+        min_length = 25000
     shell:
         """
 	if [[ ! -f "data/sequences.fasta" && -f "data/gisaid_cov2020_sequences.fasta" ]]
