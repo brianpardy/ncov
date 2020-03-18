@@ -51,12 +51,17 @@
       "key": "recency",
       "title": "Submission Date",
       "type": "categorical"
-    },    
+    },
     {
       "key": "gisaid_epi_isl"
     },
     {
       "key": "genbank_accession"
+    },
+    {
+      "key": "division_exposure",
+      "title": "Exposure History",
+      "type": "categorical"
     }
   ],
   "geo_resolutions": [
@@ -72,6 +77,7 @@
     "branch_label": "none"
   },
   "filters": [
+    "recency",
     "location",
     "division",
     "division_exposure",

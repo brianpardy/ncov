@@ -60,7 +60,8 @@ rule filter:
     params:
         min_length = 25000,
         group_by = "country",
-        sequences_per_group = 500
+        sequences_per_group = 500,
+        exclude_where = "date='2020' date='2020-01-XX' date='2020-02-XX' date='2020-03-XX' date='2020-01' date='2020-02' date='2020-03'"
     shell:
         """
         augur filter \
@@ -68,6 +69,7 @@ rule filter:
             --metadata {input.metadata} \
             --include {input.include} \
             --exclude {input.exclude} \
+            --exclude-where {params.exclude_where}\
             --min-length {params.min_length} \
             --group-by {params.group_by} \
             --sequences-per-group {params.sequences_per_group} \
@@ -92,7 +94,8 @@ rule align:
             --reference-sequence {input.reference} \
             --output {output.alignment} \
             --nthreads auto \
-            --remove-reference
+            --remove-reference \
+            --fill-gaps
         """
 
 rule mask:
@@ -196,7 +199,7 @@ rule ancestral:
             --alignment {input.alignment} \
             --output-node-data {output.node_data} \
             --inference {params.inference} \
-            --keep-ambiguous
+            --infer-ambiguous
         """
 
 rule translate:
