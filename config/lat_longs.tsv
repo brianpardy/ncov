@@ -6,6 +6,7 @@ location	Beijing	40.071320	116.406908
 location	Berlicum	51.6789	5.4012
 location	Blaricum	52.2727	5.2481
 location	Boston	42.354750	-71.061299
+location	Brasilia	-15.814189	-47.875543
 location	California	36.357039	-119.690182
 location	Cardiff	51.476291	-3.178964
 location	Chengdu	30.640989	104.067518
@@ -238,6 +239,8 @@ division	Yunnan	24.556297	101.366210
 division	Zhejiang	29.225710	120.299125
 division	Zurich	47.441242	8.641154
 division	Bourgogne-France-Comté	47.2805	4.9994
+division	Taoyuan	24.9936	121.3010
+division	Distrito Federal	-15.7998	-47.8645
 
 country	Georgia	41.989378	43.597463
 country	Luxembourg	49.755428	6.119486

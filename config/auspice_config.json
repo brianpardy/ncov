@@ -1,5 +1,5 @@
 {
-  "title": "Genomic epidemiology of novel coronavirus (hCoV-19)",
+  "title": "Genomic epidemiology of novel coronavirus",
   "build_url": "https://github.com/nextstrain/ncov",
   "maintainers": [
     {"name": "Brian Pardy", "url": "http://github.com/brianpardy/"}
@@ -18,6 +18,11 @@
     {
       "key": "country",
       "title": "Country",
+      "type": "categorical"
+    },
+    {
+      "key": "region",
+      "title": "Region",
       "type": "categorical"
     },
     {
@@ -54,7 +59,7 @@
       "key": "recency",
       "title": "Submission Date",
       "type": "categorical"
-    },    
+    },
     {
       "key": "gisaid_epi_isl"
     },
@@ -86,6 +91,7 @@
     "division_exposure",
     "country",
     "host",
+    "region",
     "author",
     "originating_lab",
     "submitting_lab"

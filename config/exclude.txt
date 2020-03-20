@@ -88,41 +88,35 @@ bat/Yunnan/RmYN02/2019
 bat/Yunnan/RmYN01/2019
 
 # Temporarily excluded
-#USA/CruiseA-1/2020
-#USA/CruiseA-2/2020
-#USA/CruiseA-3/2020
-#USA/CruiseA-4/2020
-#USA/CruiseA-5/2020
-#USA/CruiseA-6/2020
-#USA/CruiseA-7/2020
-#USA/CruiseA-8/2020
-#USA/CruiseA-9/2020
-#USA/CruiseA-10/2020
-#USA/CruiseA-11/2020
-#USA/CruiseA-12/2020
-#USA/CruiseA-13/2020
-#USA/CruiseA-14/2020
-#USA/CruiseA-15/2020
-#USA/CruiseA-16/2020
-#USA/CruiseA-17/2020
-#USA/CruiseA-18/2020
-#USA/CruiseA-19/2020
-#USA/CruiseA-20/2020
-#USA/CruiseA-21/2020
-#USA/CruiseA-22/2020
-#USA/CruiseA-23/2020
-#USA/CruiseA-24/2020
-#USA/CruiseA-25/2020
-#USA/CruiseA-26/2020
+USA/CruiseA-1/2020
+USA/CruiseA-2/2020
+USA/CruiseA-3/2020
+USA/CruiseA-4/2020
+USA/CruiseA-5/2020
+USA/CruiseA-6/2020
+USA/CruiseA-7/2020
+USA/CruiseA-8/2020
+USA/CruiseA-9/2020
+USA/CruiseA-10/2020
+USA/CruiseA-11/2020
+USA/CruiseA-12/2020
+USA/CruiseA-13/2020
+USA/CruiseA-14/2020
+USA/CruiseA-15/2020
+USA/CruiseA-16/2020
+USA/CruiseA-17/2020
+USA/CruiseA-18/2020
+USA/CruiseA-19/2020
+USA/CruiseA-20/2020
+USA/CruiseA-21/2020
+USA/CruiseA-22/2020
+USA/CruiseA-23/2020
+USA/CruiseA-24/2020
+USA/CruiseA-25/2020
+USA/CruiseA-26/2020
 
-# Temporarily excluded
-#Brazil/SPBR-03/2020
-#Brazil/SPBR-04/2020
-#Brazil/SPBR-05/2020
-#Brazil/SPBR-06/2020
+# way too divergent 
+Russia/StPetersburg-3524/2020
 
-# Temporarily excluded - no known country/state/etc
-#USA/WA-UW30/2020
-#USA/WA-UW31/2020
-#USA/WA-UW32/2020
-#USA/WA-UW33/2020
+# temporarily excluded because is currently reverse complement 
+Peru/010/2020

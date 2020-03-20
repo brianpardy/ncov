@@ -85,6 +85,7 @@ location	Rovaniemi
 location	Jönköping
 location	Helsinki
 location	Sao Paulo
+location	Brasilia
 location	Rio de Janeiro
 location	feira de santana
 location	vila velha
@@ -127,6 +128,7 @@ division	Guangdong
 division	Shanghai
 division	Hong Kong
 division	Taiwan
+division	Taoyuan
 division	Aichi
 division	Tokyo
 division	Nara
@@ -209,6 +211,7 @@ division	Sao Paulo
 division	Espirito Santo
 division	Bahia
 division	Rio de Janeiro
+division	Distrito Federal
 division	Panama City
 division	Mexico City
 division	Texas
@@ -267,3 +270,11 @@ recency	One week ago
 recency	3-7 days ago
 recency	1-2 days ago
 recency	New
+
+region	Oceania
+region	Asia
+region	Africa
+region	Europe
+region	North America
+region	Central America
+region	South America
