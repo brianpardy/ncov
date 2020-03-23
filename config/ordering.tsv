@@ -39,6 +39,8 @@ location	Melbourne
 location	Clayton
 location	Auckland
 location	Riyadh
+location	Hawali
+location	Dasman
 location	Heinsberg District
 location	Heinsberg
 location	Munich
@@ -70,6 +72,11 @@ location	Nantes
 location	Crépy en Valois
 location	Paris
 location	Reims
+location	garches
+location	rennes
+location	château-thierry
+location	longjumeau
+location	Levallois-perret
 location	Pontoise
 location	Compiègne
 location	Contamines
@@ -112,6 +119,7 @@ location	Phoenix
 location	Chicago
 location	Illinois
 location	Wisconsin
+location	Dane County
 location	Boston
 location	Nassau County
 
@@ -136,6 +144,7 @@ division	Taiwan
 division	Taoyuan
 division	Aichi
 division	Tokyo
+division	Saitama
 division	Nara
 division	Osaka
 division	Kyoto
@@ -147,6 +156,7 @@ division	South Korea
 division	Kathmandu
 division	Kerala
 division	Iran
+division	Kuwait
 division	Tbilisi
 division	Thanh Hoa
 division	Vinhphuc
@@ -158,12 +168,13 @@ division	Singapore
 division	Queensland
 division	New South Wales
 division	Victoria
+division	Wellington
 division	Auckland
-division	Hawali
 division	Riyadh
 division	Europe
 division	Central Hungary
 division	Copenhagen
+division	Bretagne
 division	Ile de France
 division	Pays de la Loire
 division	Hauts de France
@@ -261,7 +272,9 @@ country	Singapore
 country	Australia
 country	New Zealand
 country	Saudi Arabia
+country	Kuwait
 country	Georgia
+country	Poland
 country	Hungary
 country	France
 country	Denmark
