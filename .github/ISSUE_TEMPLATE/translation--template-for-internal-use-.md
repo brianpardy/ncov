@@ -1,9 +1,9 @@
 ---
-name: Translation
+name: Translation (template for internal use)
 about: Translating a situation report to another language
 title: "[Translate] DATE situation report into LANGUAGE"
 labels: ''
-assignees: cassiawag
+assignees: ''
 
 ---
 
