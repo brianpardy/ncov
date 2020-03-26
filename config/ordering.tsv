@@ -16,6 +16,7 @@ location	Zhuhai
 location	Huaian
 location	Qingdao
 location	Guangzhou
+location	NanChang
 location	Foshan
 location	Hong Kong
 location	Taipei
@@ -40,6 +41,7 @@ location	Brisbane
 location	Rockhampton
 location	Clayton
 location	Auckland
+location	Gilgit
 location	Riyadh
 location	Hawali
 location	Dasman
@@ -170,6 +172,7 @@ division	Kathmandu
 division	Kerala
 division	Iran
 division	Kuwait
+division	Gilgit Baltistan
 division	Tbilisi
 division	Thanh Hoa
 division	Vinhphuc
@@ -204,6 +207,12 @@ division	Galicia
 division	Madrid
 division	Flanders
 division	Leuven
+division	Dilbeek
+division	Schoten
+division	Rixensart
+division	Vorst
+division	Sint-Pieters-Woluwe
+division	Kasterlee
 division	Couthuin
 division	Kessel-Lo
 division	Holsbeek
@@ -240,11 +249,14 @@ division	Comunitat Valenciana
 division	Italy
 division	Lazio
 division	Lombardy
+division	Friuli Venezia Giulia
 division	Usti nad Labem
 division	Northern Ireland
 division	England
+division	United Kingdom
 division	Wales
 division	Dublin
+division	Cork
 division	Limerick
 division	Scotland
 division	Småland
@@ -295,6 +307,7 @@ country	Australia
 country	New Zealand
 country	Saudi Arabia
 country	Kuwait
+country	Pakistan
 country	Georgia
 country	Poland
 country	Hungary
