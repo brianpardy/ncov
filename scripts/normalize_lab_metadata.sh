@@ -93,6 +93,7 @@ s/Division of Consolidated Laboratories/Division of Consolidated Laboratory Serv
 # US/WI
 s/Wisconsin - Madison/Wisconsin-Madison/g;
 s/University of Wisconsin Madison, AIDS Vaccine Research Laboratories/University of Wisconsin-Madison AIDS Vaccine Research Laboratories/g;
+s/University of Wisconsin-Madison, AIDS Vaccine Research Laboratories/University of Wisconsin-Madison AIDS Vaccine Research Laboratories/g;
 s/AIDS Vaccine Research Laboratory/AIDS Vaccine Research Laboratories/g;
 s/\tAIDS Vaccine Research Laboratories\t/\tUniversity of Wisconsin-Madison AIDS Vaccine Research Laboratories\t/g;
 s/Gundersen Molecular Diagnostic Laboratory/Gundersen Molecular Diagnostics Laboratory/g;
