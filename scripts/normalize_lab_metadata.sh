@@ -26,8 +26,9 @@ s/Interdiciplinary/Interdisciplinary/g;
 s/Bioinformatics Laboratory \/ LNCC/Bioinformatics Laboratory - LNCC/g;
 s/Universidade Federal do Rio de Janeiro - UFRJ/Universidade Federal do Rio de Janeiro/g;
 
-# England
-s/The Florey Institute,  The Medical School/The Florey Institute, The Medical School/g;
+# Canada
+s/Public Health Ontario Laboratories/Public Health Ontario Laboratory/g;
+
 
 # China
 s/Insepction/Inspection/g;
@@ -41,19 +42,30 @@ s/Infectious Disease,Shenzhen Third/Infectious Disease, Shenzhen Third/g;
 s/Provinical/Provincial/g;
 s/Prevention;Guangdong/Prevention; Guangdong/g;
 s/Guangdong Provincial Center for Disease Control and Prevention; Guangdong Provincial Public Health/Guangdong Provincial Center for Disease Control and Prevention; Guangdong Provincial Institute of Public Health/g;
+s/\tGuangdong Provincial Center for Disease Control and Prevention\t/\tGuangdong Provincial Center for Disease Control and Prevention; Guangdong Provincial Institute of Public Health\t/g
+s/\tGuangdong Provincial Institution of Public Health\t/\tGuangdong Provincial Center for Disease Control and Prevention; Guangdong Provincial Institute of Public Health\t/g;
 
 # China/HK
 s/University of Hon g Kong/University of Hong Kong/g;
-s/Department of Clinical Pathology, Tuen Mun Hospital, 23 Tsing Chung Koon Road, Tuen Mun, N.T./Department of Clinical Pathology, Tuen Mun Hospital/g;
+s/Department of Clinical Pathology, Tuen Mun Hospital, 23 Tsing Chung Koon Road, Tuen Mun, N\.T\./Department of Clinical Pathology, Tuen Mun Hospital/g;
+s/The Chinese University of Hong Kong/Chinese University of Hong Kong/g;
 
 # Colombia
-s/Instituto Nacional de Salud Universidad Cooperativa de Colombia Instituto Alexander von Humboldt Imperial College-London London School of Hygiene & Tropical Medicine/Instituto Nacional de Salud, Universidad Cooperativa de Colombia, Instituto Alexander von Humboldt, Imperial College-London, London School of Hygiene \& Tropical Medicine/g;
+s/Instituto Nacional de Salud Universidad Cooperativa de Colombia Instituto Alexander von Humboldt Imperial College-London London School of Hygiene \& Tropical Medicine/Instituto Nacional de Salud, Universidad Cooperativa de Colombia, Instituto Alexander von Humboldt, Imperial College-London, London School of Hygiene \& Tropical Medicine/g;
+s/\tInstituto Nacional de Salud\t/\tInstituto Nacional de Salud, Universidad Cooperativa de Colombia, Instituto Alexander von Humboldt, Imperial College-London, London School of Hygiene \& Tropical Medicine\t/g;
+
+# England
+s/The Florey Institute,  The Medical School/The Florey Institute, The Medical School/g;
 
 # France
 s/Infectieux (IAI) Hospices/Infectieux (IAI), Hospices/g;
 
 # Germany
 s/Charite Universitaetsmedizin/Charite Universitatsmedizin/g;
+
+# Hungary
+s/Bioinformatics Research Group, Szentagothai Research Centre\t/Bioinformatics Research Group, Szentagothai Research Centre, University of Pecs\t/g;
+s/Virological Research Group, Szentagothai Research Centre\t/Virological Research Group, Szentagothai Research Centre, University of Pecs\t/g;
 
 # India
 s/Indian Council of Medical Research - National Institute of Virology/Indian Council of Medical Research-National Institute of Virology/g;
@@ -63,15 +75,15 @@ s/Istituto Superiore di Sanita, Roma , Italy/Istituto Superiore di Sanita, Rome,
 s/International Center fro Genetic Engineering/International Center for Genetic Engineering/g;
 
 # Japan
-s/Dept. of Virology III, National Institute of Infectious Diseases/Department of Virology III, National Institute of Infectious Diseases/g;
+s/Dept\. of Virology III, National Institute of Infectious Diseases/Department of Virology III, National Institute of Infectious Diseases/g;
 
 # Luxembourg
 s/Laboratoire Nationale de Sante/Laboratoire National de Sante/g;
 
 # Peru
-s/Laboratorio de Referencia Nacional de Virus Respiratorio. Instituto Nacional de Salud. Peru/Nacional de Virus Respiratorios. Instituto Nacional de Salud Peru/g;
-s/Biologia Molecular.  Instituto Nacional de Salud Peru/Biologia Molecular, Instituto Nacional de Salud, Peru/g;
-s/Biologia Molecular.Instituto Nacional de Salud.Peru/Biologia Molecular, Instituto Nacional de Salud, Peru/g;
+s/Laboratorio de Referencia Nacional de Virus Respiratorio\. Instituto Nacional de Salud\. Peru/Nacional de Virus Respiratorios\. Instituto Nacional de Salud Peru/g;
+s/Biologia Molecular\.  Instituto Nacional de Salud Peru/Biologia Molecular, Instituto Nacional de Salud, Peru/g;
+s/Biologia Molecular\.Instituto Nacional de Salud\.Peru/Biologia Molecular, Instituto Nacional de Salud, Peru/g;
 
 
 # Senegal
@@ -82,6 +94,9 @@ s/FUNDACION JIMENEZ DIAZ/Fundacion Jimenez Diaz/g;
 s/FISABIO-Public Health\./FISABIO-Public Health/g;
 s/HOSPITAL UNIVERSITARIO LA PAZ/Hospital Universitario La Paz/g;
 s/HOSPITAL UNIVERSITARIO VIRGEN DE LAS NIEVES/Hospital Universitario Virgen de las Nieves/g;
+s/Servicio Microbiologia\. Hospital Clinico Universitario\. Valencia/Servicio Microbiologia, Hospital Clinico Universitario, Valencia/g;
+s/Servicio de Microbiologia\. Hospital Clinico Universitario de Valencia/Servicio Microbiologia, Hospital Clinico Universitario, Valencia/g;
+s/Servicio Microbiologia, Hospital Clinico Universitario, Valencia\./Servicio Microbiologia, Hospital Clinico Universitario, Valencia/g;
 
 # Taiwan
 s/Taiwan\./Taiwan/g;
