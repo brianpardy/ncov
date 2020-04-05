@@ -73,6 +73,11 @@ s/Indian Council of Medical Research - National Institute of Virology/Indian Cou
 # Italy
 s/Istituto Superiore di Sanita, Roma , Italy/Istituto Superiore di Sanita, Rome, Italy/g;
 s/International Center fro Genetic Engineering/International Center for Genetic Engineering/g;
+s/"Istituto/Istituto/g;
+s/"""/"/g;
+s/""/"/g;
+s/G\.Caporale/G. Caporale/g;
+s/Abruzzo e Molise/Abruzzo e del Molise/g;
 
 # Japan
 s/Dept\. of Virology III, National Institute of Infectious Diseases/Department of Virology III, National Institute of Infectious Diseases/g;
