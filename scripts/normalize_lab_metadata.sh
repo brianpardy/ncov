@@ -1,22 +1,28 @@
 #!/bin/bash
 #
 # This script aims to normalize originating/submitting lab metadata
-# by adjusting spacing/punctuation and spelling variations
+# by adjusting spacing/punctuation and spelling variations. With more
+# consistent lab naming, filter options below the report work better.
 #
-# Adjustments grouped by top-level strain name elements
+# Adjustments scoped by top-level strain name elements where possible.
+# 
+# Comments above each section list the lab names resulting from the 
+# unmodified GISAID metadata, with counts, as of 6 Apr 2020.
+#
+# Call script as: scripts/normalize_lab_metadata.sh data/metadata.tsv
+# Script creates an unmodified backup data/metadata.tsv.bak file 
 #
 
 METADATA_IN=$1
 
 if [[ ! -r "$METADATA_IN" ]]
 then
-	echo "$0: input $METADATA_IN not found"
+	echo "$0: input $METADATA_IN not found or not readable"
 	exit 1
 fi
 
-cp $METADATA_IN ${METADATA_IN}.bak
-
-METADATA_OUT=${METADATA_IN}.fixed
+METADATA_BAK=${METADATA_IN}.bak
+METADATA_OUT=${METADATA_IN}
 
 sed '
 # Australia
@@ -320,6 +326,6 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 #s/Abruzzo e Molise/Abruzzo e del Molise/g;
  
 
-' $METADATA_IN > $METADATA_OUT
+' $METADATA_BAK > $METADATA_OUT
 
-cp $METADATA_OUT $METADATA_IN
+exit 0
