@@ -34,15 +34,15 @@ sed '
 ##
 # KU Leuven, Clincal and Epidemiological Virology (1)
 # KU Leuven, Clinical and Epidemiological Virology (42)
-# Institute information KU Leuven, Clinical and Epidemiological Virology (1)
+# Institute information  KU Leuven, Clinical and Epidemiological Virology (1)
 ##
 #### Both origin and submitter, use /g
 /^Belgium/s/KU Leuven, Clincal/KU Leuven, Clinical/g;
-/^Belgium/s/Institute information KU Leuven, Clinical and Epidemiological Virology/KU Leuven, Clinical and Epidemiological Virology/;
+/^Belgium/s/Institute information  KU Leuven, Clinical and Epidemiological Virology/KU Leuven, Clinical and Epidemiological Virology/g;
 
 
-# Brazil
-##
+# Brazil OK
+## OK
 # Instituto Adolfo Lutz Interdisciplinary Procedures Center Strategic Laboratory (1)
 # Instituto Adolfo Lutz, Interdiciplinary Procedures Center, Strategic Laboratory (12)
 # Instituto Adolfo Lutz, Interdisciplinary Procedures Center, Strategic Laboratory (1)
@@ -174,7 +174,7 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 
 
 
-# India
+# India OK
 ##
 # Indian Council of Medical Research - National Institute of Virology (1)
 # Indian Council of Medical Research-National Institute of Virology (1)
@@ -184,12 +184,12 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 
 
 # Italy
-##
+## OK
 # Department of Infectious Diseases, Istituto Superiore di Sanita, Roma , Italy (1)
 # Department of Infectious Diseases, Istituto Superiore di Sanita, Rome, Italy (1)
 ##
 /^Italy/s/Superiore di Sanita, Roma , Italy/Superiore di Sanita, Rome, Italy/;
-##
+## OK
 # Laboratory of Molecular Virology International Center for Genetic Engineering and Biotechnology (ICGEB) (3)
 # Laboratory of Molecular Virology International Center fro Genetic Engineering and Biotechnology (ICGEB) (1)
 ##
@@ -210,7 +210,7 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 # Laboratoire Nationale de Sante, Microbiology, Virology (9)
 ##
 #### Both origin and submitter, use /g
-/^Luxembourg/s/Laboratoire Nationale de Sante/Laboratoire National de Sante/;
+/^Luxembourg/s/Laboratoire Nationale de Sante/Laboratoire National de Sante/g;
 
 
 
@@ -250,9 +250,10 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 # Servicio Microbiologia. Hospital Clinico Universitario. Valencia. (2)
 # Servicio de Microbiologia. Hospital Clinico Universitario de Valencia (8)
 ##
-/^Spain/s/Servicio Microbiologia\. Hospital Clinico Universitario\. Valencia/Servicio de Microbiologia, Hospital Clinico Universitario de Valencia/;
+/^Spain/s/Servicio Microbiologia\. Hospital Clinico Universitario\. Valencia\./Servicio de Microbiologia, Hospital Clinico Universitario de Valencia/;
 /^Spain/s/Servicio Microbiologia, Hospital Clinico Universitario, Valencia/Servicio de Microbiologia, Hospital Clinico Universitario de Valencia/;
-/^Spain/s/Servicio de Microbiologia. Hospital Clinico Universitario de Valencia/Servicio de Microbiologia, Hospital Clinico Universitario de Valencia/;          
+/^Spain/s/Servicio de Microbiologia. Hospital Clinico Universitario de Valencia/Servicio de Microbiologia, Hospital Clinico Universitario de Valencia/;
+
 
 
 
@@ -302,7 +303,7 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 
 
 
-# Vietnam
+# Vietnam OK
 ##
 # National Influenza Center - National Institute of Hygiene and Epidemiology (NIHE) (1)
 # National Influenza Center, National Institute of Hygiene and Epidemiology (NIHE) (5)
