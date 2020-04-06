@@ -123,14 +123,14 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 
 
 
-# Hangzhou
-##
+# Hangzhou OK
+## OK
 # State Key Laboratory for Diagnosis and Treatment of Infectious Diseases, National Clinical Research Center for Infectious Diseases, First Affiliated Hospital, Zhejiang University School of Medicine, Hangzhou, China 310003 (8)
 # State Key Laboratory for Diagnosis and Treatment of Infectious Diseases, National Clinical Research Center for Infectious Diseases, First Affiliated Hospital, Zhejiang University School of Medicine, Hangzhou, China. 310003 (3)
 ##
 #### Both origin and submitter, use /g
 /^Hangzhou/s/China\./China/g;
-##
+## OK
 # Insepction Center of Hangzhou Center for Disease Control and Prevention (1)
 # Inspection Center of Hanghzou Center for Disease Control and Prevention (1)
 # Inspection Center of Hangzhou Center for Disease Control and Prevention (13)
@@ -183,7 +183,7 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 /^India/s/Indian Council of Medical Research-National Institute of Virology/Indian Council of Medical Research - National Institute of Virology/g;
 
 
-# Italy
+# Italy OK
 ## OK
 # Department of Infectious Diseases, Istituto Superiore di Sanita, Roma , Italy (1)
 # Department of Infectious Diseases, Istituto Superiore di Sanita, Rome, Italy (1)
@@ -327,10 +327,6 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 #s/Abruzzo e Molise/Abruzzo e del Molise/g;
 
 ##
-# Istituto Zooprofilattico Sperimentale dell'Abruzzo e Molise "G.Caporale" (1)
-# Istituto Zooprofilattico Sperimentale dell'Abruzzo e del Molise (1)
-# Istituto Zooprofilattico Sperimentale dell'Abruzzo e del Molise "G. Caporale" (1)
-# Istituto Zooprofilattico Sperimentale dell'Abruzzo e del Molise "G.Caporale" (4)
 ##
 #### just remove all the double-quotes
 #### both origin/submitter so use /g
