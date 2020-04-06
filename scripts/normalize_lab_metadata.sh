@@ -42,9 +42,11 @@ sed '
 ##
 # KU Leuven, Clincal and Epidemiological Virology (1)
 # KU Leuven, Clinical and Epidemiological Virology (42)
+# Institute information KU Leuven, Clinical and Epidemiological Virology (1)
 ##
 #### Both originating and submitting lab on these strains so /g used here
 /^Belgium/s/KU Leuven, Clincal/KU Leuven, Clinical/g;
+/^Belgium/s/Institute information KU Leuven, Clinical and Epidemiological Virology/KU Leuven, Clinical and Epidemiological Virology/g;
 
 
 # Brazil
