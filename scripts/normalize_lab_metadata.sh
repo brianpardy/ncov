@@ -25,6 +25,8 @@ fi
 METADATA_BAK=${METADATA_IN}.bak
 METADATA_OUT=${METADATA_IN}
 
+mv $METADATA_IN $METADATA_BAK
+
 sed '
 # Australia OK
 ##
