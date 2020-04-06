@@ -1,18 +1,10 @@
 #!/bin/bash
 #
-# This script aims to normalize originating/submitting lab metadata
-# by adjusting spacing/punctuation and spelling variations. With more
-# consistent lab naming, filter options below the report work better.
+# Call as: scripts/normalize_lab_metadata.sh data/metadata.tsv
+# Creates: data/metadata.tsv.bak
 #
-# Adjustments scoped by top-level strain name elements where possible.
-# 
-# Comments above each section list the lab names resulting from the 
-# unmodified GISAID metadata, with counts, as of 6 Apr 2020.
-#
-# Call script as: scripts/normalize_lab_metadata.sh data/metadata.tsv
-# Script creates an unmodified backup data/metadata.tsv.bak file 
-# then readas from the .bak file to regenerate metadata.tsv with changes
-#
+# Normalize origin/submitter lab metadata by adjusting spacing,
+# punctuation, and spelling variants.
 
 METADATA_IN=$1
 
@@ -44,9 +36,9 @@ sed '
 # KU Leuven, Clinical and Epidemiological Virology (42)
 # Institute information KU Leuven, Clinical and Epidemiological Virology (1)
 ##
-#### Both originating and submitting lab on these strains so /g used here
+#### Both origin and submitter, use /g
 /^Belgium/s/KU Leuven, Clincal/KU Leuven, Clinical/g;
-/^Belgium/s/Institute information KU Leuven, Clinical and Epidemiological Virology/KU Leuven, Clinical and Epidemiological Virology/g;
+/^Belgium/s/Institute information KU Leuven, Clinical and Epidemiological Virology/KU Leuven, Clinical and Epidemiological Virology/;
 
 
 # Brazil
@@ -127,6 +119,7 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 /^Guangdong/s/Guangdong Provincial Center for Diseases Control and Prevention;Guangdong Provincial Institute of Public Health/Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention/;
 /^Guangdong/s/Guangdong Provinical/Guangdong Provincial/;
 /^Guangdong/s/Provincial Center for Disease Control/Provincial Center for Diseases Control/;
+# this was the latest one
 
 
 
@@ -135,7 +128,7 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 # State Key Laboratory for Diagnosis and Treatment of Infectious Diseases, National Clinical Research Center for Infectious Diseases, First Affiliated Hospital, Zhejiang University School of Medicine, Hangzhou, China 310003 (8)
 # State Key Laboratory for Diagnosis and Treatment of Infectious Diseases, National Clinical Research Center for Infectious Diseases, First Affiliated Hospital, Zhejiang University School of Medicine, Hangzhou, China. 310003 (3)
 ##
-#### Both originating and submitting lab on these strains so /g used here
+#### Both origin and submitter, use /g
 /^Hangzhou/s/China\./China/g;
 ##
 # Insepction Center of Hangzhou Center for Disease Control and Prevention (1)
@@ -186,7 +179,7 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 # Indian Council of Medical Research - National Institute of Virology (1)
 # Indian Council of Medical Research-National Institute of Virology (1)
 ##
-#### Both originating and submitting lab on these strains so /g used here
+#### Both origin and submitter, use /g
 /^India/s/Indian Council of Medical Research-National Institute of Virology/Indian Council of Medical Research - National Institute of Virology/g;
 
 
@@ -216,7 +209,7 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 # Laboratoire National de Sante, Microbiology, Virology (46)
 # Laboratoire Nationale de Sante, Microbiology, Virology (9)
 ##
-#### Both originating and submitting lab on these strains so /g used here
+#### Both origin and submitter, use /g
 /^Luxembourg/s/Laboratoire Nationale de Sante/Laboratoire National de Sante/;
 
 
@@ -278,7 +271,7 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 # Division of Consolidated Laboratories Services (1)
 # Division of Consolidated Laboratory Services (19)
 # VA DCLS (1)
-#### Both originating and submitting lab on these strains so /g used here
+#### Both origin and submitter, use /g
 ##
 /^USA\/VA/s/Division of Consolidated Laboratories Services/Division of Consolidated Laboratory Services/g;
 /^USA\/VA/s/Division of Consolidated Laboratories/Division of Consolidated Laboratory Services/g;
@@ -298,7 +291,7 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 # University of Wisconsin-Madison, AIDS Vaccine Research Laboratories (1)
 # University of Wisconsin Madison, AIDS Vaccine Research Laboratories (1)
 # AIDS Vaccine Research Laboratories (4)
-#### Both originating and submitting lab on these strains so /g used here
+#### Both origin and submitter, use /g
 ##
 /^USA\/WI/s/\tAIDS Vaccine Research Laboratories\t/\tUniversity of Wisconsin-Madison AIDS Vaccine Research Laboratories\t/g;
 /^USA\/WI/s/Wisconsin-Madison, AIDS Vaccine Research/Wisconsin-Madison AIDS Vaccine Research/g;
@@ -314,21 +307,11 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 # National Influenza Center - National Institute of Hygiene and Epidemiology (NIHE) (1)
 # National Influenza Center, National Institute of Hygiene and Epidemiology (NIHE) (5)
 ##
-#### Both originating and submitting lab on these strains so /g used here
+#### Both origin and submitter, use /g
 /^Vietnam/s/National Influenza Center, National Institute of Hygiene/National Influenza Center - National Institute of Hygiene/g;
 
 
 
-
-#### NOT DONE BELOW HERE
-
-
-#
-#
-#
-#
-#
-#
 # SKIP THESE FOR NOW XXX FIXME
 #s/the First Affiliated Hospital of Guangzhou/The First Affiliated Hospital of Guangzhou/g;
 #s/Infectious Disease,Shenzhen Third/Infectious Disease, Shenzhen Third/g;
