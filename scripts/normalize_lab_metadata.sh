@@ -120,11 +120,13 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 # Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provinical Public Health (2)
 # Guangdong Provincial Center for Diseases Control and Prevention;Guangdong Provincial Institute of Public Health (1)
 # Guangdong Provincial Institution of Public Health, Guangdong Provinical Center for Disease Control and Prevention (41)
+# Guangdong Provincial Center for Disease Control and Prevention (1)
 ##
 /^Guangdong/s/Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provincial Public Health/Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention/;
 /^Guangdong/s/Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provinical Public Health/Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention/;
 /^Guangdong/s/Guangdong Provincial Center for Diseases Control and Prevention;Guangdong Provincial Institute of Public Health/Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention/;
 /^Guangdong/s/Guangdong Provinical/Guangdong Provincial/;
+/^Guangdong/s/Provincial Center for Disease Control/Provincial Center for Diseases Control/;
 
 
 
