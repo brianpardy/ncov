@@ -36,6 +36,7 @@ location	Bangkok
 location	Singapore
 location	Gold Coast
 location	Sydney
+location	Perth
 location	Sunshine Coast
 location	Melbourne
 location	Brisbane
@@ -251,6 +252,7 @@ division	Singapore
 division	Queensland
 division	Northern Territory
 division	New South Wales
+division	Western Australia
 division	Victoria
 division	Wellington
 division	Otago

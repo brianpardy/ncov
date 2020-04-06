@@ -11,6 +11,7 @@ data/gisaid_cov2020_sequences.fasta
 auspice/ncov_*.json
 auspice/sars-like-cov.json
 config/colors.tsv
+config/colors_*.tsv
 
 # Sensitive environment variables
 environment*
