@@ -114,12 +114,6 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 # Guangdong Provincial Institution of Public Health, Guangdong Provinical Center for Disease Control and Prevention (41)
 # Guangdong Provincial Center for Disease Control and Prevention (1)
 ##
-/^Guangdong/s/Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provincial Public Health/Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention/;
-/^Guangdong/s/Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provinical Public Health/Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention/;
-/^Guangdong/s/Guangdong Provincial Center for Diseases Control and Prevention;Guangdong Provincial Institute of Public Health/Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention/;
-/^Guangdong/s/Guangdong Provinical/Guangdong Provincial/;
-/^Guangdong/s/Provincial Center for Disease Control/Provincial Center for Diseases Control/;
-# this was the latest one
 
 
 
@@ -215,12 +209,12 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 
 # Senegal OK
 ##
-# Instirut Pasteur Dakar (1)
-# Institut Pasteur Dakar (21)
+# Instirut Pasteur Dakar ()
+# Institut Pasteur de Dakar (21)
 # Institut pasteur Dakar (1)
 ##
-/^Senegal/s/Institut pasteur Dakar/Institut Pasteur Dakar/;
-/^Senegal/s/Instirut Pasteur Dakar/Institut Pasteur Dakar/;
+/^Senegal/s/Institut pasteur Dakar/Institut Pasteur de Dakar/;
+/^Senegal/s/Instirut Pasteur Dakar/Institut Pasteur de Dakar/;
 
 
 # Spain
@@ -331,8 +325,8 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 #### just remove all the double-quotes
 #### both origin/submitter so use /g
 /^Italy/s/\"//g;
-/^Italy/s/G\.Caporale/G\. Caporale/g;
-/^Italy/s/Abruzzo e Molise/Abruzzo e del Molise/g;
+/^Italy/s/G\.Caporale/G\. Caporale/;
+/^Italy/s/Abruzzo e Molise/Abruzzo e del Molise/;
 
  
 
