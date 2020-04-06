@@ -25,7 +25,7 @@ METADATA_BAK=${METADATA_IN}.bak
 METADATA_OUT=${METADATA_IN}
 
 sed '
-# Australia
+# Australia OK
 ##
 # Centre for Infectious Diseases and Microbiology - Public Health (4)
 # Centre for Infectious Diseases and Microbiology Public Health (30)
@@ -40,7 +40,8 @@ sed '
 # KU Leuven, Clincal and Epidemiological Virology (1)
 # KU Leuven, Clinical and Epidemiological Virology (42)
 ##
-/^Belgium/s/KU Leuven, Clincal/KU Leuven, Clinical/;
+#### Both originating and submitting lab on these strains so /g used here
+/^Belgium/s/KU Leuven, Clincal/KU Leuven, Clinical/g;
 
 
 # Brazil
@@ -48,22 +49,24 @@ sed '
 # Instituto Adolfo Lutz Interdisciplinary Procedures Center Strategic Laboratory (1)
 # Instituto Adolfo Lutz, Interdiciplinary Procedures Center, Strategic Laboratory (12)
 # Instituto Adolfo Lutz, Interdisciplinary Procedures Center, Strategic Laboratory (1)
+# Instituto Adolfo Lutz, Interdisciplinary Procedures Center Strategic Laboratory (1)
 ##
 /^Brazil/s/Adolfo Lutz Interdisciplinary/Adolfo Lutz, Interdisciplinary/;
+/^Brazil/s/Adolfo Lutz, Interdisciplinary Procedures Center Strategic/Adolfo Lutz, Interdiciplinary Procedures Center, Strategic/;
 /^Brazil/s/Interdiciplinary/Interdisciplinary/;
-##
+## OK
 # Bioinformatics Laboratory - LNCC (9)
 # Bioinformatics Laboratory / LNCC (2)
 ##
 /^Brazil/s/Bioinformatics Laboratory \/ LNCC/Bioinformatics Laboratory - LNCC/;
-##
+## OK
 # Universidade Federal do Rio de Janeiro (2)
 # Universidade Federal do Rio de Janeiro - UFRJ (1)
 ##
 /^Brazil/s/Universidade Federal do Rio de Janeiro - UFRJ/Universidade Federal do Rio de Janeiro/;
 
 
-# Canada
+# Canada OK
 ## 
 # Public Health Ontario Laboratories (55)
 # Public Health Ontario Laboratory (2)
@@ -71,7 +74,7 @@ sed '
 /^Canada/s/Public Health Ontario Laboratory/Public Health Ontario Laboratories/g;
 
 
-# China
+# China OK
 ##
 # National Institute for Viral Disease Control & Prevention, CCDC (6)
 # National Institute for Viral Disease Control and Prevention, China CDC (3)
@@ -81,7 +84,7 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 
 
 
-# Colombia
+# Colombia OK
 ##
 # Instituto Nacional de Salud Universidad Cooperativa de Colombia Instituto Alexander von Humboldt Imperial College-London London School of Hygiene & Tropical Medicine (1)
 # Instituto Nacional de Salud, Universidad Cooperativa de Colombia, Instituto Alexander von Humboldt, Imperial College-London, London School of Hygiene & Tropical Medicine (1)
@@ -89,7 +92,7 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 /^Colombia/s/Instituto Nacional de Salud Universidad Cooperativa de Colombia Instituto Alexander von Humboldt Imperial College-London London School of Hygiene \& Tropical Medicine/Instituto Nacional de Salud, Universidad Cooperativa de Colombia, Instituto Alexander von Humboldt, Imperial College-London, London School of Hygiene \& Tropical Medicine/;
 
 
-# England
+# England OK
 ##
 # Department of Infection, Immunity and Cardiovascular Disease, The Florey Institute,  The Medical School, University of Sheffield (1)
 # Department of Infection, Immunity and Cardiovascular Disease, The Florey Institute, The Medical School, University of Sheffield (133)
@@ -97,7 +100,7 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 /^England/s/The Florey Institute,  The Medical School/The Florey Institute, The Medical School/;
 
 
-# France
+# France OK
 ##
 # Institut des Agents Infectieux (IAI) Hospices Civils de Lyon (7)
 # Institut des Agents Infectieux (IAI), Hospices Civils de Lyon (28)
@@ -137,18 +140,18 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 
 
 
-# Hong Kong
-##
+# Hong Kong OK
+## OK
 # School of Public Health, The University of Hon g Kong (2)
 # School of Public Health, The University of Hong Kong (7)
 ##
 /^HongKong/s/University of Hon g Kong/University of Hong Kong/;
-##
+## OK
 # Department of Clinical Pathology, Tuen Mun Hospital (1)
 # Department of Clinical Pathology, Tuen Mun Hospital, 23 Tsing Chung Koon Road, Tuen Mun, N.T. (1)
 ##
 /^HongKong/s/Department of Clinical Pathology, Tuen Mun Hospital, 23 Tsing Chung Koon Road, Tuen Mun, N\.T\./Department of Clinical Pathology, Tuen Mun Hospital/;
-##
+## OK
 # Chinese University of Hong Kong, Hong Kong SAR, China (1)
 # The Chinese University of Hong Kong, Hong Kong SAR, China (1)
 ##
@@ -156,14 +159,14 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 
 
 
-# Hungary
-##
+# Hungary OK
+## OK
 # Bioinformatics Research Group, Szentagothai Research Centre (2)
 # Bioinformatics Research Group, Szentagothai Research Centre, University of Pecs (1)
 #
 ##
 /^Hungary/s/Bioinformatics Research Group, Szentagothai Research Centre\t/Bioinformatics Research Group, Szentagothai Research Centre, University of Pecs\t/;
-##
+## OK
 # Virological Research Group, Szentagothai Research Centre (2)
 # Virological Research Group, Szentagothai Research Centre, University of Pecs (1)
 ##
@@ -176,7 +179,8 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 # Indian Council of Medical Research - National Institute of Virology (1)
 # Indian Council of Medical Research-National Institute of Virology (1)
 ##
-/^India/s/Indian Council of Medical Research-National Institute of Virology/Indian Council of Medical Research - National Institute of Virology/;
+#### Both originating and submitting lab on these strains so /g used here
+/^India/s/Indian Council of Medical Research-National Institute of Virology/Indian Council of Medical Research - National Institute of Virology/g;
 
 
 # Italy
@@ -192,7 +196,7 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 /^Italy/s/ fro Genetic Engineering/ for Genetic Engineering/;
 
 
-# Japan
+# Japan OK
 ##
 # Department of Virology III, National Institute of Infectious Diseases (1)
 # Dept. of Virology III, National Institute of Infectious Diseases (4)
@@ -205,11 +209,12 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 # Laboratoire National de Sante, Microbiology, Virology (46)
 # Laboratoire Nationale de Sante, Microbiology, Virology (9)
 ##
+#### Both originating and submitting lab on these strains so /g used here
 /^Luxembourg/s/Laboratoire Nationale de Sante/Laboratoire National de Sante/;
 
 
 
-# Senegal
+# Senegal OK
 ##
 # Instirut Pasteur Dakar (1)
 # Institut Pasteur Dakar (21)
@@ -220,22 +225,22 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 
 
 # Spain
-##
+## OK
 # Fundacion Jimenez Diaz (3)
 # FUNDACION JIMENEZ DIAZ (2)
 ##
 /^Spain/s/FUNDACION JIMENEZ DIAZ/Fundacion Jimenez Diaz/;
-##
+## OK
 # HOSPITAL UNIVERSITARIO LA PAZ (1)
 # Hospital Universitario La Paz (4)
 ##
 /^Spain/s/HOSPITAL UNIVERSITARIO LA PAZ/Hospital Universitario La Paz/;
-##
+## OK
 # HOSPITAL UNIVERSITARIO VIRGEN DE LAS NIEVES (2)
 # Hospital Universitario Virgen de las Nieves (1)
 ##
 /^Spain/s/HOSPITAL UNIVERSITARIO VIRGEN DE LAS NIEVES/Hospital Universitario Virgen de las Nieves/;
-##
+## OK
 # Sequencing and Bioinformatics Service and Molecular Epidemiology Research Group. FISABIO-Public Health (44)
 # Sequencing and Bioinformatics Service and Molecular Epidemiology Research Group. FISABIO-Public Health. (1)
 ##
@@ -246,12 +251,13 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 # Servicio de Microbiologia. Hospital Clinico Universitario de Valencia (8)
 ##
 /^Spain/s/Servicio Microbiologia\. Hospital Clinico Universitario\. Valencia/Servicio de Microbiologia, Hospital Clinico Universitario de Valencia/;
-/^Spain/s/Servicio Microbiologia, Hospital Clinico Universitario, Valencia/Servicio de Microbiologia. Hospital Clinico Universitario de Valencia/;
+/^Spain/s/Servicio Microbiologia, Hospital Clinico Universitario, Valencia/Servicio de Microbiologia, Hospital Clinico Universitario de Valencia/;
+/^Spain/s/Servicio de Microbiologia. Hospital Clinico Universitario de Valencia/Servicio de Microbiologia, Hospital Clinico Universitario de Valencia/;          
 
 
 
 
-# Taiwan
+# Taiwan OK
 ##
 # Department of Laboratory Medicine, Lin-Kou Chang Gung Memorial Hospital, Taoyuan, Taiwan (11)
 # Department of Laboratory Medicine, Lin-Kou Chang Gung Memorial Hospital, Taoyuan, Taiwan. (1)
@@ -266,12 +272,12 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 # Division of Consolidated Laboratory Services (19)
 #### Both originating and submitting lab on these strains so /g used here
 ##
-/^USA\/VA/s/Division of Consolidated Laboratories Services/Division of Consolidated Laboratory Services/;
-/^USA\/VA/s/Division of Consolidated Laboratories/Division of Consolidated Laboratory Services/;
+/^USA\/VA/s/Division of Consolidated Laboratories Services/Division of Consolidated Laboratory Services/g;
+/^USA\/VA/s/Division of Consolidated Laboratories/Division of Consolidated Laboratory Services/g;
 
 
 # USA/WI
-##
+## OK
 # Gundersen Molecular Diagnostic Laboratory (2)
 # Gundersen Molecular Diagnostics Laboratory (5)
 ##
@@ -281,6 +287,7 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 # University of Wisconsin-Madison AIDS Vaccine Research Laboratories (15)
 # University of Wisconsin-Madison AIDS Vaccine Research Laboratory (1)
 # University of Wisconsin-Madison, AIDS Vaccine Research Laboratories (1)
+# University of Wisconsin Madison, AIDS Vaccine Research Laboratories (1)
 # AIDS Vaccine Research Laboratories (4)
 #### Both originating and submitting lab on these strains so /g used here
 ##
@@ -288,6 +295,7 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 /^USA\/WI/s/Wisconsin-Madison, AIDS Vaccine Research/Wisconsin-Madison AIDS Vaccine Research/g;
 /^USA\/WI/s/Wisconsin-Madison AIDS Vaccine Research Laboratory/Wisconsin-Madison AIDS Vaccine Research Laboratories/g;
 /^USA\/WI/s/Wisconsin - Madison AIDS Vaccine Research/Wisconsin-Madison AIDS Vaccine Research/g;
+/^USA\/WI/s/Wisconsin Madison, AIDS Vaccine Research/Wisconsin-Madison AIDS Vaccine Research/g;
 
 
 
@@ -297,7 +305,8 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 # National Influenza Center - National Institute of Hygiene and Epidemiology (NIHE) (1)
 # National Influenza Center, National Institute of Hygiene and Epidemiology (NIHE) (5)
 ##
-/^Vietnam/s/National Influenza Center, National Institute of Hygiene/National Influenza Center - National Institute of Hygiene/;
+#### Both originating and submitting lab on these strains so /g used here
+/^Vietnam/s/National Influenza Center, National Institute of Hygiene/National Influenza Center - National Institute of Hygiene/g;
 
 
 
