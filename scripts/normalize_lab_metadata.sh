@@ -11,6 +11,7 @@
 #
 # Call script as: scripts/normalize_lab_metadata.sh data/metadata.tsv
 # Script creates an unmodified backup data/metadata.tsv.bak file 
+# then readas from the .bak file to regenerate metadata.tsv with changes
 #
 
 METADATA_IN=$1
@@ -270,10 +271,12 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 # Division of Consolidated Laboratories (5)
 # Division of Consolidated Laboratories Services (1)
 # Division of Consolidated Laboratory Services (19)
+# VA DCLS (1)
 #### Both originating and submitting lab on these strains so /g used here
 ##
 /^USA\/VA/s/Division of Consolidated Laboratories Services/Division of Consolidated Laboratory Services/g;
 /^USA\/VA/s/Division of Consolidated Laboratories/Division of Consolidated Laboratory Services/g;
+/^USA\/VA/s/\tVA DCLS\t/\tDivision of Consolidated Laboratory Services\t/g;
 
 
 # USA/WI
