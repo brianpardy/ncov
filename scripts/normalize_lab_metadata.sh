@@ -195,7 +195,6 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 ##
 /^Italy/s/ fro Genetic Engineering/ for Genetic Engineering/;
 
-
 # Japan OK
 ##
 # Department of Virology III, National Institute of Infectious Diseases (1)
@@ -326,6 +325,19 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 #s/""/"/g;
 #s/G\.Caporale/G. Caporale/g;
 #s/Abruzzo e Molise/Abruzzo e del Molise/g;
+
+##
+# Istituto Zooprofilattico Sperimentale dell'Abruzzo e Molise "G.Caporale" (1)
+# Istituto Zooprofilattico Sperimentale dell'Abruzzo e del Molise (1)
+# Istituto Zooprofilattico Sperimentale dell'Abruzzo e del Molise "G. Caporale" (1)
+# Istituto Zooprofilattico Sperimentale dell'Abruzzo e del Molise "G.Caporale" (4)
+##
+#### just remove all the double-quotes
+#### both origin/submitter so use /g
+/^Italy/s/\"//g;
+/^Italy/s/G\.Caporale/G\. Caporale/g;
+/^Italy/s/Abruzzo e Molise/Abruzzo e del Molise/g;
+
  
 
 ' $METADATA_BAK > $METADATA_OUT
