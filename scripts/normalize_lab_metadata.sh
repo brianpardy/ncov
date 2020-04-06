@@ -112,8 +112,11 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 # Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provinical Public Health (2)
 # Guangdong Provincial Center for Diseases Control and Prevention;Guangdong Provincial Institute of Public Health (1)
 # Guangdong Provincial Institution of Public Health, Guangdong Provinical Center for Disease Control and Prevention (41)
-# Guangdong Provincial Center for Disease Control and Prevention (1)
 ##
+#### Both origin and submitter, use /g
+/^Guangdong/s/Guangdong Provincial Center for Diseases Control and Prevention;Guangdong Provincial Institute of Public Health/Guangdong Provincial Institution of Public Health, Guangdong Provinical Center for Disease Control and Prevention/g;
+/^Guangdong/s/Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provinical Public Health/Guangdong Provincial Institution of Public Health, Guangdong Provinical Center for Disease Control and Prevention/g;
+/^Guangdong/s/Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provincial Public Health/Guangdong Provincial Institution of Public Health, Guangdong Provinical Center for Disease Control and Prevention/g;
 
 
 
@@ -213,8 +216,8 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 # Institut Pasteur de Dakar (21)
 # Institut pasteur Dakar (1)
 ##
-/^Senegal/s/Institut pasteur Dakar/Institut Pasteur de Dakar/;
-/^Senegal/s/Instirut Pasteur Dakar/Institut Pasteur de Dakar/;
+#### Both origin and submitter, use /g
+/^Senegal/s/Insti[rt]ut [pP]asteur Dakar/Institut Pasteur de Dakar/g;
 
 
 # Spain
