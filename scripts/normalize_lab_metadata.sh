@@ -112,11 +112,16 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 # Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provinical Public Health (2)
 # Guangdong Provincial Center for Diseases Control and Prevention;Guangdong Provincial Institute of Public Health (1)
 # Guangdong Provincial Institution of Public Health, Guangdong Provinical Center for Disease Control and Prevention (41)
+#submitter
+# Guangdong Provincial Center for Disease Control and Prevention (1)
+# Guangdong Provincial Center for Diseases Control and Prevention (5)
 ##
 #### Both origin and submitter, use /g
-/^Guangdong/s/Guangdong Provincial Center for Diseases Control and Prevention;Guangdong Provincial Institute of Public Health/Guangdong Provincial Institution of Public Health, Guangdong Provinical Center for Disease Control and Prevention/g;
-/^Guangdong/s/Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provinical Public Health/Guangdong Provincial Institution of Public Health, Guangdong Provinical Center for Disease Control and Prevention/g;
-/^Guangdong/s/Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provincial Public Health/Guangdong Provincial Institution of Public Health, Guangdong Provinical Center for Disease Control and Prevention/g;
+/^Guangdong/s/Guangdong Provincial Center for Diseases Control and Prevention;Guangdong Provincial Institute of Public Health/Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention/g;
+/^Guangdong/s/Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provinical Public Health/Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention/g;
+/^Guangdong/s/Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provincial Public Health/Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention/g;
+/^Guangdong/s/\tGuangdong Provincial Center for Disease Control and Prevention\t/\tGuangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention\t/g;
+/^Guangdong/s/\tGuangdong Provincial Center for Diseases Control and Prevention\t/\tGuangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention\t/g;
 
 
 
@@ -226,7 +231,7 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 /^Senegal/s/Insti[rt]ut [pP]asteur Dakar/Institut Pasteur de Dakar/g;
 
 
-# Spain
+# Spain OK
 ## OK
 # Fundacion Jimenez Diaz (3)
 # FUNDACION JIMENEZ DIAZ (2)
@@ -247,7 +252,7 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 # Sequencing and Bioinformatics Service and Molecular Epidemiology Research Group. FISABIO-Public Health. (1)
 ##
 /^Spain/s/FISABIO-Public Health\./FISABIO-Public Health/;
-##
+## OK
 # Servicio Microbiologia, Hospital Clinico Universitario, Valencia (1)
 # Servicio Microbiologia. Hospital Clinico Universitario. Valencia. (2)
 # Servicio de Microbiologia. Hospital Clinico Universitario de Valencia (8)
