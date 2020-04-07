@@ -118,10 +118,6 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 ##
 #### Both origin and submitter, use /g
 /^Guangdong/s/Guangdong Provincial Center for Diseases Control and Prevention;Guangdong Provincial Institute of Public Health/Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention/g;
-/^Guangdong/s/Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provinical Public Health/Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention/g;
-/^Guangdong/s/Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provincial Public Health/Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention/g;
-/^Guangdong/s/\tGuangdong Provincial Center for Disease Control and Prevention\t/\tGuangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention\t/g;
-/^Guangdong/s/\tGuangdong Provincial Center for Diseases Control and Prevention\t/\tGuangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention\t/g;
 
 
 
@@ -282,10 +278,6 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 # Virginia Division of Consolidated Laboratories (3)
 #### Both origin and submitter, use /g
 ##
-/^USA\/VA/s/Virginia Division of Consolidated Laboratories/Division of Consolidated Laboratory Services/
-/^USA\/VA/s/Division of Consolidated Laboratories Services/Division of Consolidated Laboratory Services/g;
-/^USA\/VA/s/Division of Consolidated Laboratories/Division of Consolidated Laboratory Services/g;
-/^USA\/VA/s/\tVA DCLS\t/\tDivision of Consolidated Laboratory Services\t/g;
 
 
 # USA/WI
@@ -302,13 +294,8 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 # University of Wisconsin Madison, AIDS Vaccine Research Laboratories (1)
 # AIDS Vaccine Research Laboratories (4)
 #### Both origin and submitter, use /g
+#### Also a Japan seq
 ##
-/^USA\/WI/s/\tAIDS Vaccine Research Laboratories\t/\tUniversity of Wisconsin-Madison AIDS Vaccine Research Laboratories\t/g;
-/^USA\/WI/s/Wisconsin-Madison, AIDS Vaccine Research/Wisconsin-Madison AIDS Vaccine Research/g;
-/^USA\/WI/s/Wisconsin-Madison AIDS Vaccine Research Laboratory/Wisconsin-Madison AIDS Vaccine Research Laboratories/g;
-/^USA\/WI/s/Wisconsin - Madison AIDS Vaccine Research/Wisconsin-Madison AIDS Vaccine Research/g;
-/^USA\/WI/s/Wisconsin Madison, AIDS Vaccine Research/Wisconsin-Madison AIDS Vaccine Research/g;
-/^Japan/s/Wisconsin Madison, AIDS Vaccine Research/Wisconsin-Madison AIDS Vaccine Research/g;
 
 
 
