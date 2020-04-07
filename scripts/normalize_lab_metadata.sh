@@ -269,7 +269,7 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 /^Taiwan/s/Taiwan\./Taiwan/;
 
 
-# USA/VA
+# USA/VA - CHECK ME
 ##
 # Division of Consolidated Laboratories (5)
 # Division of Consolidated Laboratories Services (1)
@@ -278,9 +278,17 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 # Virginia Division of Consolidated Laboratories (3)
 #### Both origin and submitter, use /g
 ##
+/^USA\/VA/s/VA DCLS\t/Virginia Division of Consolidated Laboratory Services\t/g;
+/^USA\/VA/s/Virginia Division of Consolidated Laboratories/Virginia Division of Consolidated Laboratory Services/g;
+/^USA\/VA/s/\tDivision of Consolidated Laboratories Services/\tVirginia Division of Consolidated Laboratory Services/g;
+/^USA\/VA/s/\tDivision of Consolidated Laboratories/\tVirginia Division of Consolidated Laboratory Services/g;
+/^USA\/VA/s/\tDivision of Consolidated Laboratory Services/\tVirginia Division of Consolidated Laboratory Services/g;
 
 
-# USA/WI
+
+
+
+# USA/WI - CHECK ME NEXT
 ## OK
 # Gundersen Molecular Diagnostic Laboratory (2)
 # Gundersen Molecular Diagnostics Laboratory (5)
@@ -296,6 +304,12 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 #### Both origin and submitter, use /g
 #### Also a Japan seq
 ##
+/^USA\/WI/s/\tAIDS Vaccine Research Laboratories/\tUniversity of Wisconsin-Madison AIDS Vaccine Research Laboratories/g;
+/^USA\/WI/s/University of Wisconsin - Madison AIDS Vaccine Research Laboratories/University of Wisconsin-Madison AIDS Vaccine Research Laboratories/g;
+/^USA\/WI/s/Madison AIDS Vaccine Research Laboratory/Madison AIDS Vaccine Research Laboratories/g;
+/^USA\/WI/s/Wisconsin-Madison, AIDS Vaccine Research Laboratories/Wisconsin-Madison AIDS Vaccine Research Laboratories/g;
+/^USA\/WI/s/Wisconsin Madison, AIDS Vaccine Research Laboratories/Wisconsin-Madison AIDS Vaccine Research Laboratories/g;
+/^Japan/s/University of Wisconsin Madison, AIDS Vaccine Research Laboratories/University of Wisconsin-Madison AIDS Vaccine Research Laboratories/;
 
 
 
