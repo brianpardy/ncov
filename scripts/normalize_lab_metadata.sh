@@ -30,7 +30,7 @@ sed '
 /^Australia/s/Microbiology - Public Health/Microbiology Public Health/;
 
 
-# Belgium
+# Belgium OK
 ##
 # KU Leuven, Clincal and Epidemiological Virology (1)
 # KU Leuven, Clinical and Epidemiological Virology (42)
@@ -106,7 +106,7 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 
 
 
-# Guangdong
+# Guangdong NOT OK
 ##
 # Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provincial Public Health (9)
 # Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provinical Public Health (2)
@@ -191,6 +191,12 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 # Laboratory of Molecular Virology International Center fro Genetic Engineering and Biotechnology (ICGEB) (1)
 ##
 /^Italy/s/ fro Genetic Engineering/ for Genetic Engineering/;
+## also sequences with many embedded double-quotes OK
+#### just remove all the double-quotes
+#### both origin/submitter so use /g
+/^Italy/s/\"//g;
+/^Italy/s/G\.Caporale/G\. Caporale/;
+/^Italy/s/Abruzzo e Molise/Abruzzo e del Molise/;
 
 # Japan OK
 ##
@@ -200,7 +206,7 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 /^Japan/s/Dept\. of Virology III, National Institute of Infectious Diseases/Department of Virology III, National Institute of Infectious Diseases/;
 
 
-# Luxembourg
+# Luxembourg OK
 ##
 # Laboratoire National de Sante, Microbiology, Virology (46)
 # Laboratoire Nationale de Sante, Microbiology, Virology (9)
@@ -268,8 +274,10 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 # Division of Consolidated Laboratories Services (1)
 # Division of Consolidated Laboratory Services (19)
 # VA DCLS (1)
+# Virginia Division of Consolidated Laboratories (3)
 #### Both origin and submitter, use /g
 ##
+/^USA\/VA/s/Virginia Division of Consolidated Laboratories/Division of Consolidated Laboratory Services/
 /^USA\/VA/s/Division of Consolidated Laboratories Services/Division of Consolidated Laboratory Services/g;
 /^USA\/VA/s/Division of Consolidated Laboratories/Division of Consolidated Laboratory Services/g;
 /^USA\/VA/s/\tVA DCLS\t/\tDivision of Consolidated Laboratory Services\t/g;
@@ -295,6 +303,7 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 /^USA\/WI/s/Wisconsin-Madison AIDS Vaccine Research Laboratory/Wisconsin-Madison AIDS Vaccine Research Laboratories/g;
 /^USA\/WI/s/Wisconsin - Madison AIDS Vaccine Research/Wisconsin-Madison AIDS Vaccine Research/g;
 /^USA\/WI/s/Wisconsin Madison, AIDS Vaccine Research/Wisconsin-Madison AIDS Vaccine Research/g;
+/^Japan/s/Wisconsin Madison, AIDS Vaccine Research/Wisconsin-Madison AIDS Vaccine Research/g;
 
 
 
@@ -325,11 +334,6 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 
 ##
 ##
-#### just remove all the double-quotes
-#### both origin/submitter so use /g
-/^Italy/s/\"//g;
-/^Italy/s/G\.Caporale/G\. Caporale/;
-/^Italy/s/Abruzzo e Molise/Abruzzo e del Molise/;
 
  
 
