@@ -106,27 +106,6 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 
 
 
-# Guangdong LAST TO CHECK
-##
-# Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provincial Public Health (9)
-# Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provinical Public Health (2)
-# Guangdong Provincial Center for Diseases Control and Prevention;Guangdong Provincial Institute of Public Health (1)
-# Guangdong Provincial Institution of Public Health, Guangdong Provinical Center for Disease Control and Prevention (41)
-#submitter
-# Guangdong Provincial Center for Disease Control and Prevention (1)
-# Guangdong Provincial Center for Diseases Control and Prevention (5)
-##
-# Prefer:
-# Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention
-#### Both origin and submitter, use /g, also multiple toplevel names so global
-s/Guangdong Provincial Institution of Public Health, Guangdong Provinical Center for Disease Control and Prevention/Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention/g;
-s/Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provinical Public Health/Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention/g;
-s/Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provincial Public Health/Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention/g;
-s/Guangdong Provincial Center for Diseases Control and Prevention\t/Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention\t/g;
-s/Guangdong Provincial Center for Disease Control and Prevention\t/Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention\t/g;
-s/Guangdong Provincial Institution of Public Health\t/Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention\t/g;
-
-
 # Hangzhou OK
 ## OK
 # State Key Laboratory for Diagnosis and Treatment of Infectious Diseases, National Clinical Research Center for Infectious Diseases, First Affiliated Hospital, Zhejiang University School of Medicine, Hangzhou, China 310003 (8)
@@ -274,7 +253,7 @@ s/Guangdong Provincial Institution of Public Health\t/Guangdong Provincial Insti
 ##
 /^Taiwan/s/Taiwan\./Taiwan/;
 
-# USA/TX - CHECK ME NEXT XXX
+# USA/TX OK
 ##
 # Texas DSHS Lab Services (3)
 # Texas Department of State Health Services (1)
@@ -336,6 +315,27 @@ s/Guangdong Provincial Institution of Public Health\t/Guangdong Provincial Insti
 ##
 #### Both origin and submitter, use /g
 /^Vietnam/s/National Influenza Center, National Institute of Hygiene/National Influenza Center - National Institute of Hygiene/g;
+
+
+# Guangdong LAST TO CHECK
+##
+# Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provincial Public Health (9)
+# Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provinical Public Health (2)
+# Guangdong Provincial Center for Diseases Control and Prevention;Guangdong Provincial Institute of Public Health (1)
+# Guangdong Provincial Institution of Public Health, Guangdong Provinical Center for Disease Control and Prevention (41)
+#submitter
+# Guangdong Provincial Center for Disease Control and Prevention (1)
+# Guangdong Provincial Center for Diseases Control and Prevention (5)
+##
+# Prefer:
+# Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention
+#### Both origin and submitter, use /g, also multiple toplevel names so global
+s/\tGuangdong Provincial Center for Disease Control and Prevention\t/\tGuangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention\t/g;
+s/\tGuangdong Provincial Center for Diseases Control and Prevention\t/\tGuangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention\t/g;
+s/\tGuangdong Provincial Institution of Public Health, Guangdong Provinical Center for Disease Control and Prevention\t/\tGuangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention\t/g;
+s/\tGuangdong Provincial Center for Diseases Control and Prevention;Guangdong Provincial Institute of Public Health\t/\tGuangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention\t/g;
+s/\tGuangdong Provincial Center for Diseases Control and Prevention; Guangdong Provinical Public Health\t/\tGuangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention\t/g;
+s/\tGuangdong Provincial Center for Diseases Control and Prevention; Guangdong Provincial Public Health\t/\tGuangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention\t/g;
 
 
 
