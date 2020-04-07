@@ -1,4 +1,5 @@
 location	Aichi	35.067543	137.334061
+location	Anchorage	61.203109	-149.888095
 location	Andel	51.7851	5.0549
 location	Arbre	50.611772	3.817121
 location	Asnières-sur-Seine	48.911508	2.284362
@@ -45,6 +46,7 @@ location	Diemen	52.3390	4.9592
 location	Duesseldorf	51.22166	6.75289
 location	Eindhoven	51.4416	5.4697
 location	England	52.405994	-1.671707
+location	Fairbanks	64.835015	-147.664888
 location	Feira de Santana	-12.2598	-38.9675
 location	Forchies-la-marche	50.435103	4.319844
 location	Foshan	23.018766	113.121428
@@ -84,11 +86,13 @@ location	Juvisy-sur-Orge	48.690609	2.377581
 location	Kain	50.637121	3.379162
 location	Kaohsiung	22.622632	120.312435
 location	Kathmandu	27.712907	85.323557
+location	Ketchikan	55.346882	-131.655301
 location	King County	47.449221	-121.864246
 location	Kirkland	47.679486	-122.206354
 location	Koersel	51.058003	5.272274
 location	Kunming	25.013024	102.866742
 location	Kyoto	35.007542	135.768455
+location	L'Aquila	42.360082	13.391087
 location	La Crosse County	43.8617	-91.1353
 location	Ladeuze	50.563047	3.768438
 location	Leuven	50.880674	4.700109
@@ -175,6 +179,7 @@ location	Taipei	25.043279	121.565717
 location	Taoyuan	24.951706	121.219785
 location	Temploux	50.484053	4.753481
 location	Tertre	50.466483	3.811510
+location	Teramo	42.661036	13.710926
 location	Thanh Hoa	19.805359	105.784515
 location	Thise	47.284553	6.079822
 location	Tianmen	30.6510	113.1556
@@ -204,10 +209,6 @@ location	Zeewolde	52.3311	5.5405
 location	Zhengzhou	34.714074	113.621939
 location	Zhongxian	30.323947	108.012855
 location	Zhuhai	22.271346	113.562879
-
-
-
-
 
 division	Aargau	47.420629	8.172097
 division	Aatalunya	41.670376	1.657348
@@ -261,6 +262,7 @@ division	British Columbia	54.010982	-124.745183
 division	Brussels	50.8503	4.3517
 division	California	36.357039	-119.690182
 division	Canary Islands	28.2916	-16.6291
+division	Castel di Sangro	41.7840	14.1080
 division	Castilla La Mancha	39.2796	-3.0977
 division	Castilla Y León	41.8357	-4.3976
 division	Castilla y Leon	41.8357	-4.3976
@@ -424,6 +426,7 @@ division	Nara	34.371026	135.887389
 division	Netherlands	52.1326	5.2913
 division	Nevele	51.0343	3.5474
 division	New Brunswick	46.570770	-66.308191
+division	New Hampshire	43.1939	-71.5724
 division	New South Wales	-32.688430	146.228414
 division	Nieuwerkerken	50.882291	5.204030
 division	Nonthaburi	13.852511	100.522791
@@ -499,11 +502,13 @@ division	South Yorkshire	53.4697	-1.3260
 division	Spain	40.4637	-3.7492
 division	St-Louis	16.0326	-16.4818
 division	Stekene	51.214088	4.030857
+division	SudKivu	-3.223156	28.386665
 division	Switzerland	46.8182	8.2275
 division	Taiwan	23.816900	121.031365
 division	Talca	-35.462909	-71.370960
 division	Taoyuan	24.9936	121.3010
 division	Tbilisi	41.733699	44.818487
+division	Teramo	42.6611	13.6987
 division	Tervuren	50.820725	4.523870
 division	Texas	31.146868	-99.188758
 division	Thanh Hoa	20.026365	105.439044
@@ -553,12 +558,12 @@ division	Zolder	50.9905	5.2580
 division	Zonhoven	50.9871	5.3672
 division	Zoutleeuw	50.836614	5.107761
 division	Zurich	47.441242	8.641154
-
-
-
-
-
-
+division	Africa	4.070194	21.824559
+division	Asia	30.451098	86.654576
+division	Europe	49.646237	10.799454
+division	North America	28.2367447	-97.738017
+division	Oceania	-25.0562891	152.008576
+division	South America	-13.083583	-58.470721
 
 country	Croatia	45.1000	15.2000
 country	Denmark	56.2639	9.5018
@@ -573,3 +578,9 @@ country	Norway	61.3109	8.73701
 country	Panama	8.98333	-79.5166
 country	Austria	47.5162	14.5501
 country	Croatia	45.1000	15.2000
+country	Africa	4.070194	21.824559
+country	Asia	30.451098	86.654576
+country	Europe	49.646237	10.799454
+country	North America	28.2367447	-97.738017
+country	Oceania	-25.0562891	152.008576
+country	South America	-13.083583	-58.470721
