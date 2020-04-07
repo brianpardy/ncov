@@ -269,7 +269,7 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 /^Taiwan/s/Taiwan\./Taiwan/;
 
 
-# USA/VA - CHECK ME
+# USA/VA OK
 ##
 # Division of Consolidated Laboratories (5)
 # Division of Consolidated Laboratories Services (1)
@@ -288,7 +288,7 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 
 
 
-# USA/WI - CHECK ME NEXT
+# USA/WI OK
 ## OK
 # Gundersen Molecular Diagnostic Laboratory (2)
 # Gundersen Molecular Diagnostics Laboratory (5)
@@ -331,12 +331,6 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 #s/Laboratorio de Referencia Nacional de Virus Respiratorio\. Instituto Nacional de Salud\. Peru/Nacional de Virus Respiratorios\. Instituto Nacional de Salud Peru/g;
 #s/Biologia Molecular\.  Instituto Nacional de Salud Peru/Biologia Molecular, Instituto Nacional de Salud, Peru/g;
 #s/Biologia Molecular\.Instituto Nacional de Salud\.Peru/Biologia Molecular, Instituto Nacional de Salud, Peru/g;
-## Italy
-#s/"Istituto/Istituto/g;
-#s/"""/"/g;
-#s/""/"/g;
-#s/G\.Caporale/G. Caporale/g;
-#s/Abruzzo e Molise/Abruzzo e del Molise/g;
 
 ##
 ##
