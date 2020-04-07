@@ -106,7 +106,7 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 
 
 
-# Guangdong NOT OK
+# Guangdong LAST TO CHECK
 ##
 # Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provincial Public Health (9)
 # Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provinical Public Health (2)
@@ -116,9 +116,15 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 # Guangdong Provincial Center for Disease Control and Prevention (1)
 # Guangdong Provincial Center for Diseases Control and Prevention (5)
 ##
-#### Both origin and submitter, use /g
-/^Guangdong/s/Guangdong Provincial Center for Diseases Control and Prevention;Guangdong Provincial Institute of Public Health/Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention/g;
-
+# Prefer:
+# Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention
+#### Both origin and submitter, use /g, also multiple toplevel names so global
+s/Guangdong Provincial Institution of Public Health, Guangdong Provinical Center for Disease Control and Prevention/Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention/g;
+s/Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provinical Public Health/Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention/g;
+s/Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provincial Public Health/Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention/g;
+s/Guangdong Provincial Center for Diseases Control and Prevention\t/Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention\t/g;
+s/Guangdong Provincial Center for Disease Control and Prevention\t/Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention\t/g;
+s/Guangdong Provincial Institution of Public Health\t/Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention\t/g;
 
 
 # Hangzhou OK
