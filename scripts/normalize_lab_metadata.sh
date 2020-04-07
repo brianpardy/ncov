@@ -274,6 +274,15 @@ s/Guangdong Provincial Institution of Public Health\t/Guangdong Provincial Insti
 ##
 /^Taiwan/s/Taiwan\./Taiwan/;
 
+# USA/TX - CHECK ME NEXT XXX
+##
+# Texas DSHS Lab Services (3)
+# Texas Department of State Health Services (1)
+# Texas Department of State Health Services Lab Services (1)
+##
+/^USA\/TX/s/Texas Department of State Health Services Lab Services/Texas DSHS Lab Services/;
+/^USA\/TX/s/Texas Department of State Health Services/Texas DSHS Lab Services/;
+
 
 # USA/VA OK
 ##
