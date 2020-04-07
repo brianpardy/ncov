@@ -336,6 +336,7 @@ s/\tGuangdong Provincial Institution of Public Health, Guangdong Provinical Cent
 s/\tGuangdong Provincial Center for Diseases Control and Prevention;Guangdong Provincial Institute of Public Health\t/\tGuangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention\t/g;
 s/\tGuangdong Provincial Center for Diseases Control and Prevention; Guangdong Provinical Public Health\t/\tGuangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention\t/g;
 s/\tGuangdong Provincial Center for Diseases Control and Prevention; Guangdong Provincial Public Health\t/\tGuangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention\t/g;
+s/\tGuangdong Provincial Institution of Public Health\t/Guangdong Provincial Institution of Public Health, Guangdong Provincial Center for Disease Control and Prevention/g;
 
 
 
