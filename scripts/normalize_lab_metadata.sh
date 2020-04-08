@@ -183,6 +183,7 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 /^Italy/s/\"//g;
 /^Italy/s/G\.Caporale/G\. Caporale/;
 /^Italy/s/Abruzzo e Molise/Abruzzo e del Molise/;
+/^Italy/s/\\047//;
 
 # Japan OK
 ##
@@ -353,6 +354,11 @@ s/\tGuangdong Provincial Institution of Public Health\t/\tGuangdong Provincial I
 
  
 
-' $METADATA_BAK > $METADATA_OUT
+' $METADATA_BAK |
+
+sed "
+/^Italy/s/dell'Abruzzo/dellAbruzzo/g;
+" - > $METADATA_OUT
+# extra sed command used to deal with single quote 
 
 exit 0
