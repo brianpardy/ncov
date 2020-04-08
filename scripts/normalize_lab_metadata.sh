@@ -317,7 +317,7 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 /^Vietnam/s/National Influenza Center, National Institute of Hygiene/National Influenza Center - National Institute of Hygiene/g;
 
 
-# Guangdong LAST TO CHECK
+# Guangdong OK
 ##
 # Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provincial Public Health (9)
 # Guangdong Provincial Center for Diseases Control and Prevention; Guangdong Provinical Public Health (2)
