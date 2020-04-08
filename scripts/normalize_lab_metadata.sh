@@ -183,7 +183,6 @@ s/National Institute for Viral Disease Control \& Prevention, CCDC/National Inst
 /^Italy/s/\"//g;
 /^Italy/s/G\.Caporale/G\. Caporale/;
 /^Italy/s/Abruzzo e Molise/Abruzzo e del Molise/;
-/^Italy/s/\\047//;
 
 # Japan OK
 ##
