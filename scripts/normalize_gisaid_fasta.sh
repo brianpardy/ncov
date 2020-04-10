@@ -26,7 +26,6 @@ echo "Normalizing GISAID file $GISAID_SARSCOV2_IN to $GISAID_SARSCOV2_OUT (min l
 
 #cat $GISAID_SARSCOV2_IN |
 	sed 's/^>[hn]Co[Vv]\(-19\)\?\//>/g' $GISAID_SARSCOV2_IN |	# remove leading prefix
-#	sed 's/^>hCoV\//>/g' |					# Kuwait seq
 	sed 's/ //g' |					# remove embedded spaces
 	sed 's/|.*$//' | 				# remove trailing metadata
 	awk "BEGIN{RS=\">\";FS=\"\n\"}length>$MIN_LENGTH{print \">\"\$0}" |	# remove short seqs
