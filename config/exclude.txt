@@ -28,13 +28,13 @@ HKU-SZ-005b_2020
 SouthKorea/SNU01/2020
 
 # Doesn't have the enough divergence relative to supposed sampling date
-Hefei/2/2020
+#Hefei/2/2020
 
 # Seems divergent - sample date 8 Jan, but 6 muts from root.
-Jingzhou/HBCDC-HB-01/2020
+#Jingzhou/HBCDC-HB-01/2020
 
 # Far to divergent- 30 mutations
-Wuhan/HBCDC-HB-04/2019
+#Wuhan/HBCDC-HB-04/2019
 
 # UPHL-05 and -06 are same patient - exclude -06
 USA/UPHL-06/2020
@@ -43,17 +43,17 @@ USA/UPHL-06/2020
 USA/UPHL-04/2020
 
 # Missing mutations
-Netherlands/Oisterwijk_1364072/2020
-Netherlands/Utrecht_1364066/2020
-USA/CT-Yale-001/2020
-Ireland/COR-20134/2020
-Guangzhou/GZMU0031/2020
-Canada/BC_40860/2020
-England/20102000906/2020
-Iceland/288/2020
-Iceland/274/2020
-England/20109050106/2020
-England/20108125106/2020
+#Netherlands/Oisterwijk_1364072/2020
+#Netherlands/Utrecht_1364066/2020
+#USA/CT-Yale-001/2020
+#Ireland/COR-20134/2020
+#Guangzhou/GZMU0031/2020
+#Canada/BC_40860/2020
+#England/20102000906/2020
+#Iceland/288/2020
+#Iceland/274/2020
+#England/20109050106/2020
+#England/20108125106/2020
 
 # Confusing phylogeography
 Netherlands/Rotterdam_1363790/2020
@@ -63,27 +63,27 @@ Netherlands/NoordBrabant_5/2020
 Netherlands/NoordBrabant_34/2020
 
 # These have more tip-specific divergence than expected
-Beijing/IVDC-BJ-005/2020
-China/WF0023/2020
-Henan/IVDC-HeN-002/2020
-Guangdong/GDSZ202013-P0014/2020
-Shanghai/IVDC-SH-001/2020
-Shenzhen/SZTH-001/2020
-Shenzhen/SZTH-004/2020
-Wuhan/IPBCAMS-WH-05/2020
-Wuhan/IVDC-HB-envF54/2020
-Wuhan/WH02/2019
-Guangzhou/GZMU0016/2020
-Guangzhou/GZMU0047/2020
-HongKong/CUHK2/2020
-Wales/PHW06/2020
-HongKong/Case1_21012020/2020
-Shandong/LY007/2020
-USA/WA-UW119/2020
-USA/WA-UW230/2020
-Italy/UniMI02/2020
-USA/CT-UW230/2020
-USA/WI-GMF-00237/2020
+#Beijing/IVDC-BJ-005/2020
+#China/WF0023/2020
+#Henan/IVDC-HeN-002/2020
+#Guangdong/GDSZ202013-P0014/2020
+#Shanghai/IVDC-SH-001/2020
+#Shenzhen/SZTH-001/2020
+#Shenzhen/SZTH-004/2020
+#Wuhan/IPBCAMS-WH-05/2020
+#Wuhan/IVDC-HB-envF54/2020
+#Wuhan/WH02/2019
+#Guangzhou/GZMU0016/2020
+#Guangzhou/GZMU0047/2020
+#HongKong/CUHK2/2020
+#Wales/PHW06/2020
+#HongKong/Case1_21012020/2020
+#Shandong/LY007/2020
+#USA/WA-UW119/2020
+#USA/WA-UW230/2020
+#Italy/UniMI02/2020
+#USA/CT-UW230/2020
+#USA/WI-GMF-00237/2020
 
 # These are removed by 'iqd' cutoff in Treetime repeatedly - exclude before this step
 # to help with alignment & tree building
@@ -91,19 +91,19 @@ Malaysia/190300/2020
 Turkey/6224-Ankara1034/2020
 
 # Excluding because seem to be too divergent - worth double checking
-Shandong/LY002/2020
-Shandong/LY001/2020
-USA/MN1-MDH1/2020
-USA/WA-UW40/2020
-USA/WA-UW53/2020
-USA/WA-UW65/2020
-USA/WA11-UW7/2020
-Wuhan/IVDC-HB-envF13/2020
-USA/WA-UW48/2020
-USA/WA-UW45/2020
-France/HF1805/2020
-Canada/ON_PHL4069/2020
-Canada/ON_PHL3501/2020
+#Shandong/LY002/2020
+#Shandong/LY001/2020
+#USA/MN1-MDH1/2020
+#USA/WA-UW40/2020
+#USA/WA-UW53/2020
+#USA/WA-UW65/2020
+#USA/WA11-UW7/2020
+#Wuhan/IVDC-HB-envF13/2020
+#USA/WA-UW48/2020
+#USA/WA-UW45/2020
+#France/HF1805/2020
+#Canada/ON_PHL4069/2020
+#Canada/ON_PHL3501/2020
 
 # Bat and pangolin relatives, too divergent to be included here
 bat/Yunnan/RaTG13/2013
