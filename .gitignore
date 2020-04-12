@@ -3,13 +3,9 @@
 results/
 build/
 auspice/
-data/ncov.fasta
-data/ncov.fasta-e
-data/sequences.fasta
-data/*ndjson
+data/*
+!data/metadata.tsv
 data/gisaid_cov2020_sequences.fasta
-auspice/ncov_*.json
-auspice/sars-like-cov.json
 config/colors.tsv
 config/colors_*.tsv
 
