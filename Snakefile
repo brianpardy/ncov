@@ -98,7 +98,7 @@ rule filter:
         min_length = 25000,
         exclude_where = "date='2020' date='2020-01-XX' date='2020-02-XX' date='2020-03-XX' date='2020-04-XX' date='2020-01' date='2020-02' date='2020-03' date='2020-04'",
         group_by = "division year month",
-        sequences_per_group = 1500
+        sequences_per_group = 5000
     shell:
         """
         augur filter \
@@ -233,7 +233,7 @@ rule tree:
         alignment = "results/subsampled_alignment{region}.fasta"
     output:
         tree = "results/tree_raw{region}.nwk"
-    threads: 4
+    threads: 8
     shell:
         """
         augur tree \
