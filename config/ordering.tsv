@@ -10,6 +10,14 @@ location	Ganzhou
 location	Pingxiang
 location	Zhongxian
 location	Yongchuan
+location	Huizhou
+location	Shantou
+location	Zhongshan
+location	Shanwei
+location	Yangjiang
+location	Shaoguan
+location	Dongguan
+location	Zhanjiang
 location	Beijing
 location	Chongqing
 location	Suzhou
@@ -119,6 +127,9 @@ location	Orsay
 location	Saint-Thibault-des-Vignes
 location	Gennevilliers
 location	Noisy le Roi
+location	Gondrecourt-le-chateau
+location	Moussy Le Neuf
+location	Carentan
 location	Contamines
 location	Thise
 location	Montreux-Chateau
@@ -246,6 +257,26 @@ location	Broome County
 location	Jefferson County
 location	Dutchess County
 location	Passaic County
+location	Thiensville
+location	Racine
+location	Cudahy
+location	Mequon
+location	Wauwatosa
+location	Greenfield
+location	Milwaukee
+location	Campbellsport
+location	Jackson
+location	Oak Creek
+location	Port Washington
+location	Grafton
+location	New Berlin
+location	Pewaukee
+location	Franklin
+location	Whitefish Bay
+location	South Milwaukee
+location	Brookfield
+location	Elm Grove
+location	Glendale
 location	Accra
 
 
@@ -264,6 +295,7 @@ division	Shandong
 division	Zhejiang
 division	Fujian
 division	Guangdong
+division	Guangzhou
 division	Shanghai
 division	Hong Kong
 division	Taiwan
@@ -287,6 +319,7 @@ division	South Korea
 division	Selangor
 division	Kuala Lumpur
 division	Kathmandu
+division	Karnataka
 division	Gujarat
 division	Kerala
 division	Kochi
@@ -297,6 +330,14 @@ division	Doha
 division	Kuwait
 division	Kayseri
 division	Istanbul
+division	Kocaeli
+division	Ankara
+division	Nevsehir
+division	Siirt
+division	Karaman
+division	Aksaray
+division	Kastamonu
+division	Balikesir
 division	Gilgit Baltistan
 division	Tbilisi
 division	Thanh Hoa
@@ -318,7 +359,31 @@ division	Otago
 division	Auckland
 division	Riyadh
 division	Saint-Petersburg
+division	Moscow
+division	Moscow Region
+division	Chelyabinsk Region
+division	Krasnodar Region
+division	Krasnoyarsk Region
+division	Khabarovsk Region
+division	Lipetsk Region
+division	Novosibirsk Region
+division	Omsk Region
+division	Orenburg Region
+division	Tatarstan
+division	Perm Region
+division	Primorskiy Region
+division	Pskov Region
+division	Sakhalin Region
+division	Samara Region
+division	Sverdlovsk Region
+division	Tver Region
 division	Buryat Republic
+division	Chechen Republic
+division	Republic of Buryatia
+division	Republic of Sakha
+division	Republic of Kabardino-Balkaria
+division	Republic of Crymea
+division	Republic of Tatarstan
 division	Europe
 division	Reykjavik
 division	Oslo
@@ -327,6 +392,7 @@ division	Baranya
 division	Kostoliste
 division	Kosice
 division	Bratislava
+division	Malopolskie
 division	Prague
 division	Martin
 division	Copenhagen
@@ -542,9 +608,16 @@ division	Limerick
 division	Scotland
 division	Småland
 division	Vasterbotten
-division	Västerbotten
-division	Moscow
-division	Helsinki
+division	Guangzhou
+division	Halland
+division	Budapest
+division	Stockholm
+division	Ostergotland
+division	Sormland
+division	Varmland
+division	Gavleborgs lan
+division	Orebro lan
+division	Norrbotten
 division	Finland
 division	Denmark
 division	Portugal
@@ -553,6 +626,7 @@ division	Kinshasa
 division	Sud Kivu
 division	KwaZulu-Natal
 division	Greater Accra
+division	West Coast Region
 division	Mbour
 division	Touba
 division	Dakar
@@ -640,6 +714,7 @@ country	Japan
 country	South Korea
 country	Nepal
 country	India
+country	Sri Lanka
 country	Vietnam
 country	Cambodia
 country	Thailand
@@ -686,6 +761,7 @@ country	Egypt
 country	Nigeria
 country	Ghana
 country	Senegal
+country	Gambia
 country	Algeria
 country	Democratic Republic of the Congo
 country	South Africa

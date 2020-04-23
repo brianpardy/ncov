@@ -55,6 +55,16 @@ rule export_all_regions:
     input:
         colors_file = expand("config/colors{region}.tsv", region=REGIONS),
         auspice_json = expand("results/ncov_with_accessions{region}.json", region=REGIONS),
+        lat_longs = files.lat_longs,
+        metadata = expand("results/metadata_adjusted{region}.tsv", region=REGIONS),
+        colors = expand("config/colors{region}.tsv", region=REGIONS),
+    shell:
+        """
+        python3 ./scripts/check_missing_locations.py \
+            --metadata {input.metadata} \
+            --colors {input.colors} \
+            --latlong {input.lat_longs} 
+        """
 
 rule subsample_focus:
     message:
@@ -69,8 +79,8 @@ rule subsample_focus:
         sequences = "results/subsample_focus{region}.fasta"
     params:
         group_by = "division year month",
-        seq_per_group_global = 120, # i.e. if not regional build
-        seq_per_group_regional = 280
+        seq_per_group_global = 40, # i.e. if not regional build
+        seq_per_group_regional = 260
     shell:
         """
         #Figure out what region being wanted
@@ -113,6 +123,8 @@ rule make_priorities:
         focal_alignment = rules.subsample_focus.output.sequences
     output:
         priorities = "results/subsampling_priorities{region}.tsv"
+    resources:
+        mem_mb = 4000
     shell:
         """
         #Figure out what region being wanted
@@ -214,6 +226,16 @@ rule adjust_metadata_regions:
         fi
         """
 
+
+#
+# Deployment and error handlers, including Slack messaging integrations.
+#
+
+from os import environ
+
+SLACK_TOKEN   = environ["SLACK_TOKEN"]   = config["slack_token"]   or ""
+SLACK_CHANNEL = environ["SLACK_CHANNEL"] = config["slack_channel"] or ""
+
 try:
     deploy_origin = (
         f"from AWS Batch job `{environ['AWS_BATCH_JOB_ID']}`"
@@ -229,18 +251,33 @@ rule deploy_to_staging:
     input:
         *rules.all_regions.input
     params:
-        slack_message = json.dumps({"text":f"Deployed <https://nextstrain.org/staging/ncov|nextstrain.org/staging/ncov> {deploy_origin}"}),
-        slack_webhook = config["slack_webhook"] or "",
+        slack_message = f"Deployed <https://nextstrain.org/staging/ncov|nextstrain.org/staging/ncov> {deploy_origin}",
         s3_staging_url = config["s3_staging_url"]
     shell:
         """
         nextstrain deploy {params.s3_staging_url:q} {input:q}
 
-        if [[ -n "{params.slack_webhook}" ]]; then
-            curl {params.slack_webhook:q} \
-                --header 'Content-type: application/json' \
-                --data-raw {params.slack_message:q} \
+        if [[ -n "$SLACK_TOKEN" && -n "$SLACK_CHANNEL" ]]; then
+            curl https://slack.com/api/chat.postMessage \
+                --header "Authorization: Bearer $SLACK_TOKEN" \
+                --form-string channel="$SLACK_CHANNEL" \
+                --form-string text={params.slack_message:q} \
                 --fail --silent --show-error \
                 --include
         fi
         """
+
+onerror:
+    slack_message = f"Build {deploy_origin} failed."
+
+    if SLACK_TOKEN and SLACK_CHANNEL:
+        shell(f"""
+            curl https://slack.com/api/files.upload \
+                --header "Authorization: Bearer $SLACK_TOKEN" \
+                --form-string channels="$SLACK_CHANNEL" \
+                --form-string initial_comment={{slack_message:q}} \
+                --form file=@{{log:q}} \
+                --form filetype=text \
+                --fail --silent --show-error \
+                --include
+        """)
