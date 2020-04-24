@@ -26,6 +26,7 @@ location	Chengdu
 location	Kunming
 location	Hangzhou
 location	Guangdong
+location	Lishui
 location	Shenzhen
 location	Zhuhai
 location	Huaian
@@ -257,6 +258,12 @@ location	Broome County
 location	Jefferson County
 location	Dutchess County
 location	Passaic County
+location	Monroe County
+location	Winona County
+location	Allamakee County
+location	Winneshiek County
+location	Jackson County
+location	Adams County
 location	Thiensville
 location	Racine
 location	Cudahy
@@ -280,7 +287,6 @@ location	Glendale
 location	Accra
 
 
-
 division	China
 division	Hubei
 division	Beijing
@@ -295,7 +301,6 @@ division	Shandong
 division	Zhejiang
 division	Fujian
 division	Guangdong
-division	Guangzhou
 division	Shanghai
 division	Hong Kong
 division	Taiwan
@@ -330,6 +335,11 @@ division	Doha
 division	Kuwait
 division	Kayseri
 division	Istanbul
+division	Afyon
+division	Sakarya
+division	Canakkale
+division	Konya
+division	Eskisehir
 division	Kocaeli
 division	Ankara
 division	Nevsehir
@@ -562,6 +572,7 @@ division	Friesland
 division	Luxembourg
 division	Austria
 division	Vienna
+division	Budapest
 division	Germany
 division	Zielonogorskie
 division	Pomorskie
@@ -608,7 +619,6 @@ division	Limerick
 division	Scotland
 division	Småland
 division	Vasterbotten
-division	Guangzhou
 division	Halland
 division	Budapest
 division	Stockholm
@@ -702,6 +712,8 @@ division	Nova Scotia
 division	New Brunswick
 division	Ontario
 division	Manitoba
+division	Prince Edward Island
+division	Newfoundland and Labrador
 division	Saskatchewan
 division	British Columbia
 

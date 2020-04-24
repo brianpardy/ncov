@@ -1,7 +1,9 @@
 location	Abondant	48.790785	1.420178
 location	Accra	5.591875	-0.184552
+location	Adams County	43.973540	-89.755486
 location	Aichi	35.067543	137.334061
 location	Albany County	42.601369	-73.973601
+location	Allamakee County	43.286290	-91.352362
 location	Anchorage	61.203109	-149.888095
 location	Andel	51.7851	5.0549
 location	Arbre	50.611772	3.817121
@@ -106,6 +108,7 @@ location	Huizhou	23.107144	114.457913
 location	Illinois	40.088552	-89.301876
 location	Indianapolis	39.7684	-86.1581
 location	Jackson	43.325508	-88.167662
+location	Jackson County	44.310891	-90.788896
 location	Jefferson County	44.063938	-75.903794
 location	Jemappes	50.446399	3.898191
 location	Jian	27.0876	114.9647
@@ -129,6 +132,7 @@ location	La Crosse County	43.8617	-91.1353
 location	Ladeuze	50.563047	3.768438
 location	Leuven	50.880674	4.700109
 location	Levallois-Perret	48.8932	2.2879
+location	Lishui	28.460681	119.919147
 location	Longjumeau	48.6931	2.2948
 location	Loon	51.379197	5.443200
 location	Loon op zand	51.625527	5.070262
@@ -145,6 +149,7 @@ location	Mequon	43.226666	-87.973033
 location	Meudon la Forêt	48.787126	2.227098
 location	Milan	45.474	9.177
 location	Milwaukee	43.058555	-87.923530
+location	Monroe County	43.940837	-90.605424
 location	Montgomery County	42.9155	-74.4526
 location	Montignies-Sur-Sambre	50.401302	4.478466
 location	Montreux-Chateau	47.607677	6.994181
@@ -266,6 +271,8 @@ location	Wauwatosa	43.054646	-88.039969
 location	Westchester County	41.1220	-73.7949
 location	Whitefish Bay	43.111041	-87.901408
 location	Winksele	50.897244	4.644376
+location	Winneshiek County	43.288933	-91.839928
+location	Winona County	43.993965	-91.799960
 location	Wisconsin	44.535145	-89.527762
 location	Woippy	49.154613	6.148404
 location	Wuhan	30.554807	114.271501
@@ -284,9 +291,11 @@ location	Zhuhai	22.271346	113.562879
 
 
 
+
 division	Aargau	47.420629	8.172097
 division	Aatalunya	41.670376	1.657348
 division	Abruzzo	42.1920	13.7289
+division	Afyon	38.752653	30.553661
 division	Aichi	35.067543	137.334061
 division	Aksaray	38.446110	33.878216
 division	Alagoas	-9.748630	-36.417626
@@ -339,8 +348,10 @@ division	Bree	51.138202	5.631877
 division	Bretagne	48.2020	2.9326
 division	British Columbia	54.010982	-124.745183
 division	Brussels	50.8503	4.3517
+division	Budapest	47.482728	19.084269
 division	Buryat Republic	52.311711	108.916732
 division	California	36.357039	-119.690182
+division	Canakkale	40.030844	26.733769
 division	Canary Islands	28.2916	-16.6291
 division	Castel di Sangro	41.7840	14.1080
 division	Castilla La Mancha	39.2796	-3.0977
@@ -386,6 +397,7 @@ division	Elsene	50.828210	4.371924
 division	England	52.405994	-1.671707
 division	Estado de Mexico	19.4969	-99.7233
 division	Eupen	50.6292	6.0337
+division	Eskisehir	39.773703	30.518708
 division	Espirito Santo	-19.1834	-40.3089
 division	Estinnes	50.374881	4.103617
 division	Etterbeek	50.833658	4.394661
@@ -421,7 +433,6 @@ division	Graubünden	46.709551	9.606903
 division	Greater Accra	5.761619	0.040546
 division	Grimbergen	50.942962	4.375664
 division	Guangdong	23.615762	114.483257
-division	Guangzhou	23.123972	113.292889
 division	Guayas	-1.9575	-79.9193
 division	Gujarat	22.2587	71.1924
 division	Gyeonggi	37.397957	127.380864
@@ -484,6 +495,7 @@ division	Kochi	33.518628	133.505674
 division	Knokke-Heist	51.331501	3.308826
 division	Kocaeli	40.886367	29.905212
 division	Komen	45.8175	13.7483
+division	Konya	37.859743	32.495438
 division	Kosice	48.7164	21.2611
 division	Kostoliste	48.4467	16.9868
 division	Kraainem	50.8611	4.4593
@@ -551,6 +563,7 @@ division	New Jersey	40.0583	-74.4057
 division	New Hampshire	43.1939	-71.5724
 division	New South Wales	-32.688430	146.228414
 division	New Taipei City	25.0170	121.4628
+division	Newfoundland and Labrador	53.655784	-61.203723
 division	Nieuwerkerken	50.882291	5.204030
 division	Nonthaburi	13.852511	100.522791
 division	Normandie	48.8799	0.1713
@@ -591,6 +604,7 @@ division	Primorskiy Region	45.0526	135.0000
 division	Pskov Region	56.7709	29.0940
 division	Puebla	19.0414	-98.2063
 division	Prague	50.0755	14.4378
+division	Prince Edward Island	46.344935	-63.405688
 division	Quangning	21.214760	107.251514
 division	Quaregnon	50.437973	3.859235
 division	Queretaro	20.5888	-100.3899
@@ -618,6 +632,7 @@ division	Saint-Ghislain	50.483208	3.802415
 division	Saint-Petersburg	59.882080	30.330800
 division	Saint-Saulve	50.374816	3.569855
 division	Saitama	35.909903	139.659758
+division	Sakarya	40.753425	30.384694
 division	Sakhalin Region	50.6910	142.9506
 division	Samara Region	53.4184	50.4726
 division	Santa Catarina	-27.157670	-49.888561
