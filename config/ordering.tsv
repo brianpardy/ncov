@@ -51,6 +51,10 @@ location	Kathmandu
 location	Thanh Hoa
 location	Hanoi
 location	Bangkok
+location	Kolkata
+location	East Medinipur
+location	Tehatta
+location	Darjeeling
 location	Singapore
 location	Gold Coast
 location	Sydney
@@ -199,6 +203,10 @@ location	Vila Velha
 location	Mexico City
 location	La Crosse County
 location	King County
+location	Whatcom County
+location	Yakima County
+location	Thurston County
+location	Skagit County
 location	Snohomish County
 location	Pierce County
 location	Solano County
@@ -256,6 +264,8 @@ location	Washington County
 location	Albany County
 location	Putnam County
 location	New York City
+location	Fairfield County
+location	Bergen County
 location	Clinton County
 location	Broome County
 location	Jefferson County
@@ -290,6 +300,8 @@ location	Glendale
 location	Accra
 
 
+
+
 division	China
 division	Hubei
 division	Guangxi
@@ -315,6 +327,7 @@ division	Keelung
 division	Taoyuan
 division	Aichi
 division	Tokyo
+division	Japan
 division	Chiba
 division	Ishikawa
 division	Saitama
@@ -332,6 +345,7 @@ division	Kathmandu
 division	Karnataka
 division	Gujarat
 division	Kerala
+division	West Bengal
 division	Kochi
 division	Khyber Pakhtunkhwa
 division	Ramat Gan
@@ -647,6 +661,7 @@ division	Lagos
 division	Kinshasa
 division	Sud Kivu
 division	KwaZulu-Natal
+division	Gauteng
 division	Greater Accra
 division	West Coast Region
 division	Mbour
