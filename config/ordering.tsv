@@ -205,6 +205,11 @@ location	Manaus
 location	Feira de Santana
 location	Vila Velha
 location	Mexico City
+location	Alajuela
+location	San Rafael
+location	Cartago
+location	San Juan
+location	Heredia
 location	La Crosse County
 location	King County
 location	Whatcom County
@@ -217,6 +222,10 @@ location	Solano County
 location	Sonoma County
 location	Orange County
 location	Kirkland
+location	Mason County
+location	Asotin County
+location	Benton County
+location	Kittitas County
 location	Seattle
 location	Los Angeles
 location	California
@@ -284,6 +293,7 @@ location	Allamakee County
 location	Winneshiek County
 location	Jackson County
 location	Adams County
+location	New Orleans
 location	Thiensville
 location	Racine
 location	Cudahy
@@ -753,6 +763,10 @@ division	Lima
 division	Montevideo
 division	Panama City
 division	Panama
+division	San Rafael
+division	La Union
+division	Tibas
+division	Orotina
 division	Mexico
 division	Mexico City
 division	Estado de Mexico
@@ -797,6 +811,7 @@ division	Grand Princess
 division	Oregon
 division	Washington
 division	Hawaii
+division	Puerto Rico
 division	Alaska
 division	Canada
 division	Nova Scotia
@@ -881,6 +896,7 @@ country	Argentina
 country	Uruguay
 country	Colombia
 country	Panama
+country	Costa Rica
 country	Mexico
 country	USA
 country	Canada
