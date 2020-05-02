@@ -72,6 +72,7 @@ location	Riyadh
 location	Hawali
 location	Dasman
 location	Ulan-Ude
+location	Bela - Ledec na Sazavou
 location	Vienne
 location	Heinsberg District
 location	Heinsberg
@@ -294,6 +295,11 @@ location	Winneshiek County
 location	Jackson County
 location	Adams County
 location	New Orleans
+location	East Feliciana Parish
+location	Caddo Parish
+location	East Baton Rouge Parish
+location	Livingston Parish
+location	Iberville Parish
 location	Thiensville
 location	Racine
 location	Cudahy
@@ -476,10 +482,12 @@ division	Bratislava
 division	Malopolskie
 division	Czech Republic
 division	Prague
+division	Vysocina Region
 division	Martin
 division	Copenhagen
 division	Bretagne
 division	Ile de France
+division	Occitanie
 division	Centre-Val de Loire
 division	France
 division	Auvergne-Rhône-Alpes
@@ -699,6 +707,12 @@ division	Czech Republic
 division	Budapest
 division	Sweden
 division	Stockholm
+division	Uppsala
+division	Dalarna
+division	Skane
+division	Jamtland
+division	Vastra Gotaland
+division	Vastmanland
 division	Ostergotland
 division	Sormland
 division	Varmland
@@ -869,7 +883,6 @@ country	Belgium
 country	Luxembourg
 country	Germany
 country	Austria
-country	Croatia
 country	Switzerland
 country	Italy
 country	Spain
@@ -913,5 +926,4 @@ region	Asia
 region	Africa
 region	Europe
 region	North America
-region	Central America
 region	South America
