@@ -20,7 +20,6 @@ else:
 wildcard_constraints:
     region = "[-a-zA-Z]+",
     date = "[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]"
-        """
 
 localrules: download
 
