@@ -39,7 +39,8 @@ files:
 # Filter settings
 filter:
   # Require nearly full-length genomes.
-  min_length: 25000
+  #min_length: 25000
+  min_length: 29400
 
   # Omit sequences with incomplete date annotations.
   exclude_where: "date='2020' date='2020-01-XX' date='2020-02-XX' date='2020-03-XX' date='2020-04-XX' date='2020-01' date='2020-02' date='2020-03' date='2020-04'"
@@ -59,12 +60,15 @@ partition_sequences:
 mask:
   # Number of bases to mask from the beginning and end of the alignment. These regions of the genome
   # are difficult to sequence accurately.
-  mask_from_beginning: 130
-  mask_from_end: 50
+  #mask_from_beginning: 130
+  #mask_from_end: 50
+  mask_from_beginning: 55
+  mask_from_end: 100
 
   # Specific sites to mask in the reference genome's coordinates.
   # These are 1-indexed coordinates of sites that have been identified as prone to sequencing errors.
-  mask_sites: "18529 29849 29851 29853"
+  #mask_sites: "18529 29849 29851 29853"
+  mask_sites: "187 1059 2094 3037 3130 6990 8022 10323 10741 11074 11083 13408 14786 15324 18529 19684 20148 21137 21575 24034 24378 25563 26144 26461 26681 28077 28826 28854 29700 29849 29851 29853"
 
 # TreeTime settings
 refine:
@@ -108,7 +112,8 @@ subsample_focus:
   seq_per_group_regional: 260
 
   # Sequences per group if the current build is not a regional build.
-  seq_per_group_global: 40
+  #seq_per_group_global: 40
+  seq_per_group_global: 10000
 
 subsample_context:
   group_by: "country year month"
@@ -128,4 +133,5 @@ subsample_focus_for_priorities:
   seq_per_group_regional: 300
 
   # Sequences per group if the current build is not a regional build.
-  seq_per_group_global: 150
+  #seq_per_group_global: 150
+  seq_per_group_global: 10000
